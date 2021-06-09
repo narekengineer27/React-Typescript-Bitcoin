@@ -1,0 +1,502 @@
+@value theme: "Styles/theme.css";
+@value grayBorder,
+grayDark,
+grayLight,
+profitColor,
+lossColor,
+zeroColor,
+blue,
+green,
+white from theme;
+.wrapper {
+    padding-bottom: 20px;
+}
+
+.mainPanel {
+    padding: 30px 0 0;
+}
+
+.page {
+    padding: 60px 60px 0;
+}
+
+.rightPanel {
+    width: 73%;
+    float: left;
+    padding: 20px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+
+.rightPanelSub {
+    width: 75%;
+    margin: 0 auto 30px;
+}
+
+.bottomPanel {
+    border-top: grayBorder;
+    margin-top: 40px;
+    padding-top: 30px;
+}
+
+.submitButton {
+    min-width: 250px;
+}
+
+.currentRobotConfig {
+    line-height: 1.4;
+    color: grayDark;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.baseTitle {
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 5px;
+}
+
+.list {
+    line-height: 2;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+.list .number {
+    display: inline-block;
+    float: right;
+    padding-right: 50px;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.resetButton {
+    margin: 0 50px;
+}
+
+.resetButtonBottomPanel {
+    margin-bottom: 30px;
+}
+
+.listBox {
+    margin-bottom: 259px;
+}
+
+.itemWrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.margin0 {
+    margin-bottom: 0px;
+}
+
+.itemTitle {
+    flex: 0 0 25%;
+    padding-top: 7px;
+}
+
+.itemContent {
+    flex: 0 0 70%;
+}
+
+.itemContentWrapper {
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #c5c9ce;
+}
+
+.itemContentWrapper1 {
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #c5c9ce;
+    margin-top: 20px;
+}
+
+.exchangePlusBtn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+    padding-left: 4px;
+    padding-bottom: 0px;
+    bottom: -10px;
+    left: 50%;
+    background-color: #4ea9ff;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+
+.exchangePlusBtn span {
+    position: absolute;
+    top: -1px;
+    left: 4px;
+}
+
+.exchangeMinusBtn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+    padding-left: 4px;
+    padding-bottom: 0px;
+    top: 50%;
+    right: -30px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.exchangeMinusBtn span {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    font-size: 25px;
+}
+
+.descWrapper1 {
+    display: table;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.descWrapper2 {
+    display: table;
+    margin-top: -10px;
+}
+
+.toggleDesc {
+    display: table-cell;
+    width: 100%;
+    padding-right: 40px;
+    font-size: 12px;
+}
+
+.descToggleSpan {
+    width: 130px;
+}
+
+.descToggle {
+    display: flex;
+    flex: 0 0 20%;
+    text-align: right;
+}
+
+.toggle {
+    margin-top: -2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transform: rotate(180deg);
+}
+
+.inputsWrapper {
+    display: flex;
+    width: 100%;
+}
+
+.selectFieldWrapper {
+    margin-bottom: 20px;
+}
+
+.textFieldWrapper1 {
+    margin-right: 5px;
+    width: 50%;
+}
+
+.textFieldWrapper2 {
+    margin-left: 5px;
+    width: 50%;
+}
+
+.offerItemWrapper {
+    display: flex;
+}
+
+.offerDesc {
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+.offerItemTitle {
+    padding-top: 15px;
+    flex: 0 0 10%;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.offerItemText {
+    flex: 0 0 46%;
+    padding: 0 15px;
+}
+
+.offerItemSelect {
+    flex: 0 0 40%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d2dae5;
+}
+
+.walletDesc {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    font-size: 12px;
+}
+
+.submitBtn {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+}
+
+.votingCreditContent {
+    display: flex;
+}
+
+.purchaseBtnWrapper {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d2dae5;
+}
+
+.purchaseBtn {
+    width: 200px;
+}
+
+.progressBar {
+    width: 100%;
+    height: 10px;
+}
+
+.progressBarWrapper {
+    display: flex;
+    flex: 0 1 80%;
+}
+
+.votingAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 1px #bdbdbd;
+    background-color: #e0e0e0;
+    margin-top: -12px;
+    margin-right: 20px;
+    flex: 0 0 50px;
+}
+
+.votingExchangeName {
+    width: 130px;
+    flex: 0 0 130px;
+    text-align: center;
+}
+
+.voteBtn {
+    width: 70px;
+    margin: -5px 10px;
+}
+
+.shareBtn {
+    margin: -5px 0px;
+}
+
+.votingItem {
+    margin-bottom: 30px;
+}
+
+.votingSubmit {
+    /*margin-top: 100px;*/
+}
+
+.logos {
+    width: 100px;
+    height: 34px;
+    margin-top: -5px;
+}
+
+.progressSpan {
+    max-width: 100px;
+    width: 10%;
+    text-align: right;
+}
+
+.exchangesToggle {
+    width: fit-content;
+    margin: auto;
+    font-size: 12px;
+}
+
+.flexContent {
+    display: flex;
+}
+
+.votingContactInput {
+    margin-right: 5px;
+}
+
+.smallInput {
+    width: 25%;
+    display: flex;
+}
+
+.smallInput span {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.titleSection {
+    width: fit-content;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.titleSection img {
+    width: 45px;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.communitySubTitle {
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.communityFromTo {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.communityTo {
+    padding: 0px 20px;
+}
+
+.integrationText {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 11px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* share & earn */
+
+.share_earn {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.w_3 {
+    width: 33.33%;
+    padding: 0 5px;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.addressText,
+.tokenText {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    /* text-align: left; */
+}
+
+.address {
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    line-height: 2.4;
+}
+
+.token {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: #13E091;
+    padding: 5px 60px;
+    display: table;
+    margin: 0 auto;
+}
+
+.withdrawBtn {
+    text-transform: uppercase;
+    padding: 5px 20px;
+}
+
+
+/* share & earn */
+
+@media screen and (max-width: 1024px) {
+    .page {
+        padding: 60px 25px 0;
+    }
+}
+
+@media screen and (max-width: screen-lg) {
+    .page {
+        padding: 60px 60px 0;
+    }
+}
+
+@media screen and (max-width: screen-md) {
+    .page {
+        padding: 60px 0px 0;
+    }
+    .itemWrapper {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .walletDesc {
+        margin-top: -5px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 633px) {
+    .page {
+        padding: 60px 0px 0;
+    }
+    .itemWrapper {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .walletDesc {
+        margin-top: -5px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,185 @@
+@value theme: "Styles/theme.css";
+
+@value green, blue, orange, orangeAlt, grayDark, publicPanelShadow from theme;
+
+@value screen-md, screen-lg from theme;
+
+
+h1.title {
+  line-height: 52px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.exchanges {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.bitfinex {
+  margin-right: 70px;
+}
+
+.bitfinex img {
+  width: 174px;
+}
+
+.bittrex img {
+  width: 112px;
+}
+
+.exchanges .p {
+  color: grayDark;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 6px;
+}
+
+.cardsWrapper {
+  min-height: 1000px;
+}
+
+.cards {
+  margin: 75px -20px 120px -20px;
+  text-align: center;
+  vertical-align: top;
+  animation-duration: 0.75s;
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: publicPanelShadow;
+  display: inline-flex;
+  flex-direction: column;
+  min-height: 370px;
+  margin: 52px 20px;
+  padding: 80px 45px 50px;
+  position: relative;
+  text-align: center;
+  width: 560px;
+}
+
+.card.blue {
+  border: solid 1px blue;
+}
+
+.card.green {
+  border: solid 1px #00d966;
+}
+
+.card.orange {
+  border: solid 1px orangeAlt;
+}
+
+.card img {
+  left: 50%;
+  margin-left: -58px;
+  position: absolute;
+  top: -56px;
+}
+
+.card .title {
+  font-size: 25px;
+}
+
+.card .green {
+  color: green;
+  font-size: 40px;
+  margin-top: 12px;
+}
+
+.card .orange {
+  color: orange;
+  font-size: 40px;
+  margin-top: 12px;
+}
+
+.card .price {
+  color: blue;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0 10px;
+}
+
+.card .note {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.card div:last-child {
+  margin-top: auto;
+}
+
+.card .button {
+  width: 270px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: screen-md) {
+
+  h1.title {
+    font-size: 25px;
+    margin: 70px 0 50px 0;
+    line-height: 32px;
+  }
+
+  .exchanges {
+    margin-bottom: 30px;
+  }
+
+  .bitfinex {
+    margin-right: 42px;
+  }
+
+  .bitfinex img {
+    width: 130px;
+  }
+
+  .bittrex img {
+    width: 84px;
+  }
+
+  .cards {
+    margin: 5px 0 -30px 0;
+  }
+
+  .card {
+    display: flex;
+    height: auto;
+    margin: 80px auto;
+    min-height: 339px;
+    padding: 75px 25px 30px;
+    width: 100%;
+  }
+
+  .card .title {
+    font-size: 20px;
+  }
+
+  .card .green {
+    font-size: 36px;
+  }
+
+  .card .orange {
+    font-size: 36px;
+  }
+
+  .card .button {
+    max-width: 270px;
+    width: 100%;
+  }
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

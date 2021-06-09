@@ -1,0 +1,12 @@
+{
+  "iScroll": {
+    "interactiveScrollbars": true,
+    "scrollbars": true,
+    "scrollX": false,
+    "resizeScrollbars": false,
+    "mouseWheel": true,
+    "disableMouse": true,
+    "disablePointer": true,
+    "disableTouch": true
+  }
+}

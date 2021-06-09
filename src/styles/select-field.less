@@ -1,0 +1,61 @@
+@import "theme";
+
+.Select-control {
+  color: @grayDark;
+  font-family: 'Roboto';
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: @grayBorder;
+  width: 100%;
+  height: 38px;
+  outline: none;
+}
+
+.Select-input {
+  padding: 0px;
+}
+
+.Select-menu-outer {
+  z-index: 9999;
+}
+
+.Select-menu {
+}
+
+.Custom-select {
+  .Select-menu-outer {
+    z-index: 9999;
+    width: 150px;
+  }
+  
+  .Select-menu {
+    white-space: nowrap;
+  }
+}
+
+.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: #677d9d;
+}
+
+.Select.is-open > .Select-control, .Select.is-focused > .Select-control {
+  background-color: #ebf0f5;
+  border-color: @gray;
+  box-shadow: none;
+}
+
+.Select-placeholder, .Select--single > .Select-control .Select-value {
+  line-height: 37px;
+}
+
+.Select-option {
+  height: 38px;
+  background: #fff;
+  box-shadow: inset 0 -1px 0 0 #ebf0f5;
+  &.is-focused {
+    background-color: #ebf0f5;
+  }
+  &.is-selected {
+    background-color: #ebf0f5;
+  }
+}

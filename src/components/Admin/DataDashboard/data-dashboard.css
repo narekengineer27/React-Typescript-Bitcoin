@@ -1,0 +1,51 @@
+.firstRow {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.title {
+    padding: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 50px 30px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.contentWrapper {
+    padding: 50px 50px;
+    border: 1px solid #c5c7ca;
+    text-align: center;
+}
+
+.table {
+    margin: 10px 5px;
+    position: relative;
+}
+
+.secondRow {
+    display: flex;
+}
+
+.exchangePlusBtn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+    padding-left: 4px;
+    padding-bottom: 0px;
+    bottom: -10px;
+    left: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .exchangePlusBtn span{
+    position: absolute;
+    top: -1px;
+    left: 4px;
+  }

@@ -1,0 +1,38 @@
+@value theme: "Styles/theme.css";
+
+@value blue, gray from theme;
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 700px;
+  position: relative;
+}
+
+.title {
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.package {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: white;
+  border: solid 1px gray;
+  justify-content: space-between;
+}
+
+.editButton {
+  margin-left: 20px;
+}
+
+.packageName {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.saveChanges {
+  width: 150px;
+}

@@ -1,0 +1,45 @@
+.checkIcon {
+    font-size: 60px;
+    -webkit-text-stroke: 5px white;
+    color: limegreen;
+}
+
+.failedIcon {
+    font-size: 60px;
+    -webkit-text-stroke: 5px white;
+    color: red;
+}
+
+.modalWrapper {
+    text-align: center;
+}
+
+.modalTitle {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modalDesc {
+    margin: 10px 35px;
+}
+
+.footerText {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.imgWrapper {
+
+}
+
+.imgWrapper img {
+    height: 30px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.bold {
+    font-weight: 500;
+}

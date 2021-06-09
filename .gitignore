@@ -1,0 +1,17 @@
+.idea
+.settings
+.classpath
+.project
+target
+vendor
+node_modules
+.sass-cache
+dist
+npm-debug.log
+build
+package-lock.json
+.vscode
+env.json
+__mocks__
+__snapshots__
+coverage

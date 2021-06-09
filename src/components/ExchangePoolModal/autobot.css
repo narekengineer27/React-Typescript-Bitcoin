@@ -1,0 +1,282 @@
+.noPadding {
+    padding: 0px !important;
+    background-color: #F6F7F8;
+}
+
+.text {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 50px;
+}
+
+.divide {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.stateWrapper {
+    height: 360px;
+    overflow-y: scroll;
+}
+
+.state {
+    margin: 0 auto;
+    display: table;
+}
+
+.state .row {
+    margin: 20px auto;
+}
+
+.state_item {
+    margin: auto 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.state_spinImagePercent {
+    position: relative;
+}
+
+.state_item .spinImagePercent {
+    top: 46%;
+}
+
+.name {
+    margin-top: 15px;
+    line-height: 1.3;
+}
+
+.state_item img {
+    width: 100%;
+}
+
+.state_item .up,
+.state_item .down {
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+.btc {
+    font-size: 9px;
+    white-space: nowrap;
+    line-height: 0.6
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    margin: 30px 10px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.spinImage {
+    /* width: 150px; */
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+.spinImagePercent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #13E091;
+}
+
+.exchange {
+    margin: 20px auto;
+    position: relative;
+}
+
+.exchangeText {
+    color: #5C7292;
+    font-size: 15px;
+    margin: 5px auto;
+}
+
+.description {
+    font-size: 12px;
+    color: #5C7292;
+    display: table;
+    position: absolute;
+    top: 55px;
+    right: 40px;
+}
+
+.rightText {
+    text-align: right;
+    display: table;
+}
+
+.leftText {
+    text-align: left;
+    margin-left: 20px;
+    display: table;
+}
+
+.leftdescription {
+    font-size: 13px;
+    color: #5C7292;
+    display: table;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+
+.firstText {
+    color: #4599ff;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.secondText {
+    color: #3fcf8e;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tableSection {
+    text-align: left;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row p {
+    margin-bottom: unset;
+}
+
+.w1 {
+    width: 11.2%
+}
+
+.w2 {
+    width: 16.6%
+}
+
+.green,
+.status_bought {
+    color: #13E091;
+}
+
+.blue,
+.status_buy {
+    color: #4599FF;
+}
+
+.red,
+.status_sold {
+    color: #FF504F;
+}
+
+.yellow,
+.status_sell {
+    color: #F9BB4E;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.btn {
+    width: 80%;
+}
+
+.value {
+    display: table;
+    margin: auto;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.up {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #13E091;
+    margin-right: 5px;
+}
+
+.down {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #FF504F;
+    margin-right: 5px;
+}
+
+.green span,
+.red span {
+    display: inline-block;
+}
+
+.tbody {
+    height: 240px;
+    background-color: #fff;
+}
+
+.tbody, .noDataBody {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.tbody.noScrollbar {
+    height: auto;
+}
+
+.noDataWrapper{
+    height: 240px !important;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

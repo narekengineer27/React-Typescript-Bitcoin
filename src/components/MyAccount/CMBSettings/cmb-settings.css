@@ -1,0 +1,117 @@
+@value theme: "Styles/theme.css";
+
+@value screen-sm, screen-md, screen-lg, grayBorder, white, grayDark, blueText, profitColor, lossColor, zeroColor, green, blue, orange from theme;
+
+.withdrawalDescription {
+  padding: 40px 0 30px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.withdrawalWrapper {
+  width: 500px;
+  padding: 20px 25px 5px;
+  margin-bottom: 30px;
+  background-color: white;
+  border: grayBorder;
+  border-radius: 4px;
+}
+
+.withdrawalFlex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  border-bottom: grayBorder;
+}
+
+.withdrawalLoader {
+  position: relative;
+  height: 100px;
+}
+
+.autoWithdrawal {
+  position: relative;
+  top: 10px;
+}
+.exchangeName {
+  color: blueText;
+  font-weight: 700;
+}
+
+.exchangeId {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.bittrex {
+  color: orange;
+}
+
+.bitfinex {
+  color: blue;
+}
+
+.comboRow {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.comboText {
+  flex: 0 1 100%;
+}
+
+.comboSelect {
+  flex: 0 0 75px;
+  border-bottom: grayBorder;
+}
+
+.comboSelect .select {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.exitForm .btn {
+  margin-left: 7%;
+}
+
+.exitStrategyForm {
+  width: 464px;
+}
+
+@media screen and (max-width: screen-lg) {
+  .exitForm {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: screen-md) {
+  .withdrawalDescription {
+    padding: 20px 15px;
+  }
+
+  .withdrawalWrapper {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .comboSelect {
+    flex: 0 0 100px;
+  }
+
+  .sendSMS, .sendEmail {
+    margin-top: 20px;
+  }
+
+  .btn input {
+    width: 100%;
+  }
+
+  .comboSelect .select {
+    margin-top: -1px;
+  }
+
+  .exitStrategyForm {
+    width: 100%;
+  }
+}

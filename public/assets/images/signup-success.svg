@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="190px" viewBox="0 0 190 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>check</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="180" height="180" rx="90"></rect>
+        <filter x="-4.7%" y="-3.6%" width="109.4%" height="109.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.850980392   0 0 0 0 0.4  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="30" y="30" width="120" height="120" rx="60"></rect>
+        <filter x="-7.1%" y="-5.4%" width="114.2%" height="114.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.850980392   0 0 0 0 0.4  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Manual-Trading-via-Robot" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.2---Sign-Up-successfull" transform="translate(-635.000000, -293.000000)">
+            <g id="box" transform="translate(375.000000, 246.000000)">
+                <g id="check" transform="translate(265.000000, 50.000000)">
+                    <g id="Rectangle" opacity="0.0700000003">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#00D966" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#00D966" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="if_checkmark-24_103184" transform="translate(65.000000, 70.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                        <path d="M45.0872816,0.491885282 C44.4771498,-0.163961761 43.4838636,-0.163961761 42.8778965,0.491885282 L19.5950175,25.2339929 C18.9848857,25.8942863 17.9895172,25.8942863 17.3835501,25.2339929 L7.18206328,14.1423966 C6.88012093,13.8133615 6.48447233,13.6510671 6.08674136,13.6488439 C5.68484568,13.6466207 5.27670291,13.8089151 4.97059584,14.1423966 L0.462284154,18.4687639 C0.162424162,18.797799 0,19.2090929 0,19.6381725 C0,20.0694753 0.162424162,20.520787 0.464366515,20.8475989 L10.7512301,32.3727212 C11.3592796,33.0307915 12.3567305,34.0979324 12.9626976,34.7515562 L17.3856325,39.5114495 C17.9936819,40.1628502 18.9869681,40.1628502 19.5970999,39.5114495 L49.5122988,7.63061361 C50.1224306,6.97698977 50.1224306,5.90317919 49.5122988,5.24955536 L45.0872816,0.491885282 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

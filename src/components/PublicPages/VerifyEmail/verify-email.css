@@ -1,0 +1,40 @@
+@value theme: "Styles/theme.css";
+@value grayDark from theme;
+@value screen-sm from theme;
+
+.message {
+  color: grayDark;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-top: 50px;
+}
+
+.image {
+  height: 190px;
+}
+
+.panel {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  display: flex;
+}
+
+.resultPanel {
+  padding: 30px 0 20px 0;
+  text-align: center;
+}
+
+.verifyInput {
+  width: 80%;
+}
+
+.verifyBtn {
+  margin-left: 5%;
+  width: 15%;
+}
+
+@media screen and (max-width: screen-sm) {
+  .successMessage {
+    font-size: 18px;
+  }
+}

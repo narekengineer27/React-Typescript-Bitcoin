@@ -1,0 +1,25 @@
+@value theme: "Styles/theme.css";
+@value blue, blueText, grayDark, whiteShadow, white, grayBorder, screen-md from theme;
+
+.content {
+  padding: 60px 0;
+}
+
+.title {
+  margin: 10vh 0 35px 0;
+  text-align: center;
+}
+
+.totalAmount, .amount {
+  padding: 25px 0;
+}
+
+.amount {
+  font-weight: 500;
+}
+
+@media screen and (max-width: screen-md) {
+  .content {
+    padding: 20px 0;
+  }
+}

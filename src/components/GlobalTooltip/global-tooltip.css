@@ -1,0 +1,32 @@
+@value theme: "Styles/theme.css";
+@value blueText, white from theme;
+@value screen-md from theme;
+
+.wrapper {
+  position: absolute;
+  display: inline-block;
+  z-index: 1100; /* to make it above the modal */
+}
+
+.tooltip {
+  padding: 5px 8px;
+  font-size: 13px;
+  line-height: 1.23;
+  color: white;
+  background-color: blueText;
+  border-radius: 5px;
+}
+
+.tooltip::after {
+  display: block;
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  bottom: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: blueText transparent transparent transparent;
+}

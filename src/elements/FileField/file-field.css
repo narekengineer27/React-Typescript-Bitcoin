@@ -1,0 +1,25 @@
+.wrapper {
+  display: inline-block;
+}
+
+.dropzone {
+  width: auto;
+  height: auto;
+  border: none;
+}
+
+.uploader {
+  display: flex;
+}
+
+.files {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  line-height: 40px;
+}
+
+.uploadedFiles {
+  margin: 15px 5px;
+  line-height: 1.5;
+}

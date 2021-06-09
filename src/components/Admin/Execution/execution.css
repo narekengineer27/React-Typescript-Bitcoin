@@ -1,0 +1,83 @@
+@value theme: "Styles/theme.css";
+@value grayBorder, grayLight, blueLight, blueShadowLarge, greenShadow, greenLight, white, grayDark from theme;
+
+.headerFlex {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 20px;
+}
+
+.dropdown {
+  position: relative;
+  top: 15px;
+  width: 180px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.description {
+  font-size: 14px;
+  color: grayDark;
+}
+
+.tradeDetail {
+  padding: 10px 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tradesWrapper {
+  height: 118px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.trade {
+  flex: 0 0 19%;
+  margin-right: 1%;
+}
+
+.trade:last-child {
+  margin-right: 0;
+}
+
+.fieldRow {
+  position: relative;
+  flex: 0 0 45%;
+  margin-bottom: 15px;
+}
+
+.time {
+  position: absolute;
+  left: 50px;
+}
+
+.trade.sold {
+  background-color: blueLight;
+  box-shadow: blueShadowLarge;
+  border-radius: 4px;
+  border: 1px solid blueLight;
+}
+
+.trade.bought {
+  background-color: greenLight;
+  box-shadow: greenShadow;
+  border-radius: 4px;
+  border: 1px solid greenLight;
+}
+
+.tradeLable {
+  color: white;
+  font-size: 11px;
+}
+
+.tradeName {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}

@@ -1,0 +1,10 @@
+@value theme: "Styles/theme.css";
+@value blueText from theme;
+
+.description {
+  padding-bottom: 10px;
+}
+
+.enterCode {
+  margin-bottom: 30px;
+}

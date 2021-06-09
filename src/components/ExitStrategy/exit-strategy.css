@@ -1,0 +1,88 @@
+@value theme: "Styles/theme.css";
+
+@value screen-md, blue, grayLight, grayDark, grayBorder, white, whiteShadow from theme;
+
+.strategyDescription {
+  padding: 20px 0 10px;
+}
+
+.form {
+  position: relative;
+}
+
+.smartSellingWrapper {
+  padding: 20px;
+  margin-top: 10px;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: grayLight;
+}
+
+.smartSellingWrapper.setDefaults {
+  background-color: white;
+}
+
+.enableSmartSelling {
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.smartSelling {
+  color: blue;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+}
+
+.intervals {
+  flex: 0 0 125px;
+  margin-right: 20px;
+}
+
+.priceDrops {
+  flex: 0 0 190px;
+}
+
+.explanation {
+  font-size: 13px;
+  padding-bottom: 15px;
+  line-height: 1.23;
+}
+
+.toggle {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: screen-md) {
+  .smartSellingWrapper {
+    margin-top: 15px;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+
+  .description {
+    padding: 0 15px;
+  }
+
+  .explanation {
+    margin-top: 10px;
+  }
+
+  .intervals {
+    flex: 0 0 120px;
+    margin-right: 15px;
+  }
+
+  .priceDrops {
+    flex: 0 0 180px;
+  }
+
+  .form {
+    padding: 0;
+  }
+}

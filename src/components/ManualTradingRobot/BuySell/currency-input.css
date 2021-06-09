@@ -1,0 +1,48 @@
+@value theme: "Styles/theme.css";
+@value gray from theme;
+
+.comboRow {
+  margin-bottom: 20px;
+  display: table;
+  width: 100%;
+}
+
+.comboText {
+  display: table-cell;
+  vertical-align: bottom;
+  border-bottom: 1px solid gray;
+}
+
+.comboText > div {
+  margin-bottom: 0;
+}
+
+.comboText input {
+  border-bottom: none !important;
+}
+
+.comboSelect {
+  display: table-cell;
+  vertical-align: middle;
+  width: 70px;
+  padding-left: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.comboSelect > div {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.comboSelect :global(.Select-control) {
+  font-size: 15px;
+  height: 30px;
+}
+
+.comboSelect :global(.Select-control) :global(.Select-value), .comboSelect :global(.Select-control) :global(.Select-placeholder) {
+  line-height: 32px !important;
+}
+
+.comboSelect :global(.Select-control) :global(.Select-input) {
+  height: 30px;
+}

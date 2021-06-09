@@ -1,0 +1,45 @@
+@value theme: "Styles/theme.css";
+
+@value screen-lg, screen-md, grayBorder from theme;
+
+.btnGroup, .formWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btnGroup {
+  margin-top: 25px;
+}
+
+.footer {
+  padding: 30px 10% 10px;
+  border-top: grayBorder;
+}
+
+.formWrapper {
+  margin: 30px auto 20px;
+}
+
+.input {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: screen-lg) {
+  .btnGroup, .formWrapper {
+    width: 90%;
+  }
+
+  .footer {
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: screen-md) {
+  .btnGroup, .formWrapper {
+    width: 100%;
+  }
+
+  .footer {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,41 @@
+.logoimage {
+  width: 40px;
+}
+.closeBtn {
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+.title {
+  font-size: 24px;
+  vertical-align: middle;
+}
+.titleoutline {
+  border: 2px solid #4599FF;
+}
+.userlistcontent {
+  max-height: 600px;
+  overflow: auto;
+}
+.smalltitle {
+  border-right: 2px solid #4599FF;
+}
+.userimage {
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+}
+.username {
+  font-size: 20px;
+}
+.onlineStatus {
+  width: 15px;
+  height: 15px;
+  background-color: #13E091;
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  border-radius: 50%;
+}

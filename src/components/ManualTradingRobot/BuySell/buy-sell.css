@@ -1,0 +1,108 @@
+@value theme: "Styles/theme.css";
+@value blueText, profitColor, zeroColor, grayBorder, darkGray, grayDark, gray, screen-sm from theme;
+
+.infoPanel {
+  margin: 20px 0 30px 0;
+  background-color: #fafcff;
+  border-radius: 4px;
+  border: grayBorder;
+  padding: 20px 10px;
+}
+
+.sub-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: blueText;
+  padding-bottom: 11px;
+  margin-bottom: 0;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: 500;
+  color: profitColor;
+  margin-bottom: 5px;
+}
+
+.quantity {
+  color: blueText;
+}
+
+.exchange-rate {
+  font-size: 13px;
+  color: zeroColor;
+  margin: 14px 0 0 0;
+}
+
+.right {
+  border-left: grayBorder;
+  padding-left: 25px;
+}
+
+.content {
+  min-height: 110px;
+  margin-bottom: 15px;
+}
+
+.notice {
+  font-size: 13px;
+  color: darkGray;
+}
+
+.buyForm {
+  padding-top: 10px;
+}
+
+.loading {
+  font-size: 20px;
+  font-weight: 300;
+  color: grayDark;
+}
+
+.refresh {
+  width: 153px;
+}
+
+@media screen and (max-width: screen-sm){
+  .infoPanel {
+    padding: 20px 0 20px 0;
+    margin-bottom: 10px;
+  }
+
+  .right {
+    border-left: none;
+    padding-left: 15px;
+  }
+
+  .right .content {
+    min-height: 60px;
+  }
+
+  .left .content {
+    border-bottom: grayBorder;
+    padding-bottom: 10px;
+    min-height: 111px;
+  }
+
+  .exchange-rate {
+    position: absolute;
+    top: -14px;
+    right: 15px;
+  }
+
+  .comboRow {
+    margin-bottom: 10px;
+  }
+
+  .notice {
+    padding: 10px 38px 20px 38px;
+  }
+
+  .exitForm {
+    padding-top: 20px;
+  }
+
+  .exitForm :global(.row) {
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,38 @@
+@value theme: "Styles/theme.css";
+@value grayDark from theme;
+
+.subTitle {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.radioBoxs {
+  padding-left: 20px;
+}
+
+.description {
+  line-height: 1.4;
+  padding: 30px 0;
+}
+
+.descriptionRobot {
+  padding: 8px 0 20px 3px;
+}
+
+.option {
+  margin-right: 40px;
+}
+
+.radioTitle {
+  padding: 20px 0;
+  color: grayDark;
+}
+
+.daysInput {
+  margin-bottom: 160px;
+  padding-left: 20px;
+}
+
+.inputBase {
+  margin-bottom: 242px;
+}

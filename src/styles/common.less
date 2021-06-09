@@ -1,0 +1,161 @@
+@import 'theme';
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+input.small {
+  height: 34px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.text-center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+i.profit {
+  color: @profitColor;
+}
+
+i.loss {
+  color: @lossColor;
+}
+
+.relative {
+  position: relative;
+}
+
+.no-data {
+  height: 200px;
+  font-size: 25px;
+  color: @grayDark;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: @grayBorder;
+  border-right: @grayBorder;
+}
+
+@media screen and (max-width: @screen-md) {
+  .no-data {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.blue {
+  color: @blue;
+}
+
+.green {
+  color: @profitColor;
+}
+
+.red {
+  color: @lossColor;
+}
+
+.orange {
+  color: @orange;
+}
+
+.no-border {
+  border: none;
+}
+
+.no-border-bottom {
+  border-bottom: none;
+}
+
+.border-top {
+  border-top: @grayBorder;
+}
+
+.border-right {
+  border-right: @grayBorder;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.customModalContent {
+  padding: 20px 0 0;
+}
+
+.customModalFooter {
+  text-align: right;
+  padding-top: 30px;
+  border-top: solid 1px #ebf0f5;
+}
+
+.customModalCancel {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.font500 {
+  font-weight: 500;
+}
+
+@media screen and (max-width: @screen-sm) {
+  .customModalFooter {
+    padding-top: 20px;
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aaa;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #aaa;
+}

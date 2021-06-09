@@ -1,0 +1,11 @@
+@value theme: "Styles/theme.css";
+@value blueText, profitColor, zeroColor, grayBorder, darkGray, grayDark, gray, screen-sm from theme;
+
+.baseMain {
+  padding-top: 20px;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+

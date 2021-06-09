@@ -1,0 +1,133 @@
+@value theme: "Styles/theme.css";
+@value screen-sm, screen-md, blue, blueText, grayDark, whiteShadow, white, grayBorder from theme;
+
+.header {
+  padding-top: 40px;
+  position: relative;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.border {
+ border-bottom: grayBorder;
+}
+
+.goBack, .goSkip {
+  position: absolute;
+  font-size: 20px;
+  color: blueText;
+  font-weight: 300;
+}
+
+.goBack {
+  left: 0;
+}
+
+.goSkip {
+  right: 0;
+}
+
+.iconBack, .iconSkip {
+  position: relative;
+  bottom: 2px;
+}
+
+.iconBack {
+  margin: 0 15px 0 0;
+}
+
+.iconSkip {
+  margin: 0 0 0 15px;
+}
+
+.headingText {
+  padding: 40px 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 0.93;
+  text-align: center;
+}
+
+.beforeLogin {
+  text-align: center;
+}
+
+@media screen and (max-width: screen-md) {
+  .header {
+    padding: 30px 0;
+    margin: 0;
+  }
+
+  .goBack {
+    left: 0;
+    font-size: 16px;
+  }
+
+  .iconBack {
+    width: 15px;
+    margin: 0 10px 0 0;
+  }
+
+  .headingText {
+    margin-top: 0;
+    padding: 20px 0 0;
+    font-size: 26px;
+  }
+
+  .noGoBackHeader {
+    margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: screen-sm) {
+  .header {
+    padding: 20px 0 0;
+    margin: 0 20px;
+    text-align: left;
+  }
+
+  .goBack {
+    position: static;
+  }
+
+  .headingText {
+    border-bottom: grayBorder;
+    line-height: 1.3;
+  }
+
+  .headingText.beforeLogin {
+    padding: 5px 0 15px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .headingText.afterLogin {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+.content {
+  min-height: 110px;
+  margin-bottom: 15px;
+}
+
+.infoPanel {
+  padding: 20px 0 20px 0;
+  margin-bottom: 10px;
+}
+
+.left .content {
+  border-bottom: grayBorder;
+  padding-bottom: 10px;
+  min-height: 111px;
+}
+
+.btnActivateRobot {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}

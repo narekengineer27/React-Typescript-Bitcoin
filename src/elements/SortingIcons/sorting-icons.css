@@ -1,0 +1,22 @@
+@value theme: "Styles/theme.css";
+@value blue, grayDark from theme;
+
+.wrapper {
+  display: inline-block;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons i {
+  font-size: 16px;
+  line-height: 9px;
+  cursor: pointer;
+  color: grayDark;
+}
+
+.icons i:hover, .icons i.active {
+  color: blue;
+}

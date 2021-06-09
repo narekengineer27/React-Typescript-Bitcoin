@@ -1,0 +1,82 @@
+@value theme: "Styles/theme.css";
+@value grayBorder, grayLight from theme;
+
+.tableRow:nth-child(even) {
+  background-color: rgba(235, 240, 245, 0.25);
+}
+
+.tableRow:nth-child(odd) {
+  background-color: #fff;
+}
+
+.tableRow:hover {
+  cursor: pointer;
+  background-color: rgba(235, 240, 245, 0.5);
+}
+
+.tableWrapper {
+  padding: 20px;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: grayLight;
+}
+
+.tableWrapper .selectAll {
+  flex: 0 0 40px;
+}
+
+.tableWrapper .id {
+  flex: 0 0 70px;
+}
+
+.tableWrapper .title {
+  flex: 0 0 100px;
+}
+
+.tableWrapper .image {
+  flex: 0 0 70px;
+}
+
+.tableWrapper .updated_at {
+  flex: 0 0 140px;
+}
+
+.tableWrapper .actions {
+  flex: 0 0 142px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scrollableTable {
+  position: relative;
+}
+
+.btnGroup {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tableWrapper .answer {
+  width: 200px;
+}
+
+.deleteBtn {
+  margin-right: 15px;
+}
+
+.pagination {
+  margin: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.headerTitle {
+  padding-top: 20px;
+}
+
+.selectedRecord {
+  padding-left: 15px;
+}
+
+.imageSrc {
+  width: 50px;
+}

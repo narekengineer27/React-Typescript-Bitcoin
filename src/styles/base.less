@@ -1,0 +1,63 @@
+@import 'theme';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, pre {
+  font-family: Roboto !important;
+  line-height: 1.5;
+  font-size: 15px;
+  color: @blueText;
+  background-color: @bgDark;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 50px;
+  color: @blueText;
+}
+
+label {
+  margin: 0;
+  font-size: 15px;
+}
+
+a, a:hover, a:focus {
+  color: @blue;
+  text-decoration: none;
+}
+
+input {
+  padding: 10px;
+  color: @blueText;
+  border-radius: 4px;
+  outline: none;
+  border: @grayBorder;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container-fluid {
+  max-width: 1440px;
+}
+
+@media screen and (max-width: @screen-sm) {
+  h1 {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,40 @@
+@value theme: "Styles/theme.css";
+@value screen-sm from theme;
+
+.signup {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.paddedRow {
+  padding: 20px 0 8px 0;
+}
+
+.loginBtn {
+  display: block;
+  width: 100px;
+  margin: 30px auto;
+}
+
+.link {
+  
+}
+
+.link a {
+  color: #232323;
+}
+
+.link a:hover {
+  color: blueText;
+}
+
+.loginInputWrapper input {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: screen-sm) {
+  .paddedRow {
+    padding-bottom: 20px;
+  }
+}

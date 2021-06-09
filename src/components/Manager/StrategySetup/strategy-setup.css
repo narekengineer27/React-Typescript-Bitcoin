@@ -1,0 +1,79 @@
+@value theme: "Styles/theme.css";
+@value grayBorder, grayDark, grayLight, profitColor, lossColor, zeroColor, blue, green, white from theme;
+
+.wrapper {
+  padding-bottom: 20px;
+}
+
+.mainPanel {
+  padding: 30px 0 0;
+}
+
+.page {
+  padding: 60px 60px 0;
+}
+
+.rightPanel {
+  width: 73%;
+  float: left;
+  padding: 20px;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+}
+
+.rightPanelSub {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+
+.bottomPanel {
+  border-top: grayBorder;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+.submitButton {
+  min-width: 250px;
+}
+
+.currentRobotConfig {
+  line-height: 1.4;
+  color: grayDark;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.baseTitle {
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 5px;
+}
+
+.list {
+  line-height: 2;
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+.list .number {
+  display: inline-block;
+  float: right;
+  padding-right: 50px;
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.resetButton {
+  margin: 0 50px;
+}
+
+.resetButtonBottomPanel {
+  margin-bottom: 30px;
+}
+
+.listBox {
+  margin-bottom: 259px;
+}

@@ -1,0 +1,16 @@
+
+.table {
+  position: relative;
+}
+
+.table :global(.th) {
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+.table :global(.td):not(:global(.th)) {
+  font-size: 15px;
+  padding: 20px 15px;
+  background-color: #fff;
+  white-space: normal;
+}

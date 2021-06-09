@@ -1,0 +1,304 @@
+@value theme: "Styles/theme.css";
+@value blueText, grayDark, gray, blue, publicPanelShadow, bgDark, screen-md, screen-lg from theme;
+
+.countHeaderWrapper {
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #969696;
+    padding: 4px;
+}
+
+.countHeader {
+    max-width: 1200px;
+    width: fit-content;
+    margin: auto;
+    display: table;
+}
+
+.countTitle {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.countText {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.countDisplays {
+    display: table;
+    margin:auto;
+}
+
+.displayItem {
+    display: table-cell;
+    text-align: center;
+    padding: 2px 5px;
+}
+
+.displayItemContent {
+    padding: 2px 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px #969696;
+    width: 67px;
+    height: 57px;
+}
+
+.displayCount {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    line-height: 33px;
+    color: #F9BB4E;
+}
+
+.displayDesc {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 11px;
+    text-align: center;
+
+    color: #5C7292;
+}
+
+.countBtnWrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.countBtn {
+    display: table-cell;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.countDisplaysModalWrapper {
+    padding-top: 10px;
+}
+
+.modalTitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+
+    color: #5C7292;
+}
+
+.modalImage {
+    text-align: center;
+}
+
+.toggleWrapper {
+    text-align: center;
+    padding: 20px;
+}
+
+.blueText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    text-align: right;
+    
+    color: #4599FF;
+    padding-right: 10px;
+}
+
+.normalText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 12px;
+    
+    color: #5C7292;
+    padding-left: 10px;
+}
+
+.countdownModalLabel {
+    text-align: center;
+}
+
+.modalCountText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+
+    color: #5C7292;
+}
+
+
+.modalDisplayItemContent {
+    padding: 2px 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px #969696;
+    width: 100px;
+    height: 77px;
+}
+
+.modalDisplayCount {
+    display: block;
+    color: #f9bb4e;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+}
+
+.modalDisplayDesc {
+    display: block;
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 14px;
+}
+
+.modalDescItem {
+    padding: 10px;
+}
+
+.modalDescItemTitle {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    text-align: justify;
+
+    color: #5C7292;
+}
+
+.modalDescItemDesc {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    text-align: justify;
+
+    color: #5C7292;
+}
+
+@media (min-width: screen-md) and (max-width: 900px) {
+
+    .displayItemContent {
+        width: 57px;
+        height: 45px;
+    }
+
+    .displayCount {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 24px;
+        text-align: center;
+        line-height: 28px;
+        color: #F9BB4E;
+    }
+
+    .countTitle {
+        font-size: 24px;
+    }
+    
+    .countText {
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: screen-md) {
+    .displayItemContent {
+        width: 57px;
+        height: 45px;
+    }
+
+    .displayCount {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 24px;
+        text-align: center;
+        line-height: 28px;
+        color: #F9BB4E;
+    }
+
+    .countTitle {
+        font-size: 20px;
+    }
+    
+    .countText {
+        font-size: 14px;
+    }
+    
+}
+
+
+@media screen and (max-width: 650px){
+    .displayItemContent {
+        width: 57px;
+        height: 45px;
+    }
+
+    .displayCount {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 24px;
+        text-align: center;
+        line-height: 28px;
+        color: #F9BB4E;
+    }
+
+    .countTitle {
+        display: none;
+    }
+    
+    .countText {
+        display: none;
+    }
+    
+}

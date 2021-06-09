@@ -1,0 +1,99 @@
+@value theme: "Styles/theme.css";
+@value blue, blueText, validationRed, grayBorder, grayDark from theme;
+@value screen-sm from theme;
+
+.group {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input {
+  color: blueText;
+  font-size: 17px;
+  padding: 17px 5px 13px 5px;
+  display: block;
+  border: none;
+  border-bottom: grayBorder;
+  width: 100%;
+  border-radius: 0;
+  background: transparent;
+}
+
+.medium.input {
+  font-size: 15px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.label {
+  color: grayDark;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 16px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.medium.label {
+  font-size: 15px;
+}
+
+.input:focus ~ .label {
+  top: -2px;
+  font-size: 11px;
+  color: #4fa3ff;
+}
+
+.input.inputFull ~ .label {
+  top: -2px;
+  font-size: 11px;
+}
+
+.hasError .label, .hasError .input:focus ~ .label, .hasError .input.inputFull ~ .label {
+  top: -2px;
+  font-size: 11px;
+  color: validationRed;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%px;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: blue;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+  width: 50%;
+}
+
+@media screen and (max-width: screen-sm) {
+  .group {
+    margin-bottom: 10px;
+  }
+}

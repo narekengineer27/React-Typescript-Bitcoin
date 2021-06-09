@@ -1,0 +1,60 @@
+@value theme: "Styles/theme.css";
+@value blue, blueText, validationRed, grayBorder, grayDark, white from theme;
+@value screen-sm from theme;
+
+.wrapper {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.loader {
+  position: absolute;
+  top: 4px;
+  left: auto;
+  right: 2px;
+  color: blue;
+}
+
+.checked.loader {
+  color: white;
+  left: 4px;
+  right: auto;
+}
+
+.topLabel .loader {
+  top: 28px;
+}
+
+.labelText {
+  padding-left: 15px;
+  line-height: 23px;
+  text-align: left;
+  color: blueText;
+  cursor: pointer;
+}
+
+.topLabelText {
+  display: block;
+  font-size: 11px;
+  color: blueText;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.labelText.noLabel {
+  display: none;
+}
+
+.react-toggle, .labelText {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media screen and (max-width: screen-sm) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}

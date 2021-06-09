@@ -1,0 +1,137 @@
+@value theme: "Styles/theme.css";
+@value screen-md, blue, grayDark, grayBorder, white, whiteShadow from theme;
+
+.tbody {
+  height: 640px;
+  position: relative;
+}
+
+.table .actions {
+  flex: 0 0 450px;
+  padding-right: 30px;
+  overflow: visible;
+}
+
+.table .row .actions {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.noScrollbar .actions {
+  flex: 0 0 450px;
+  padding-right: 10px;
+  overflow: visible;
+}
+
+.description {
+  margin: 30px 0;
+}
+
+.tbody .cellTop {
+  align-items: flex-start;
+}
+
+.tbody .cellCenter {
+  align-items: center;
+}
+
+.closed {
+  font-weight: 400;
+}
+
+.expanded {
+  font-weight: 700;
+}
+
+.expanded .buttons {
+  padding-top: 7px;
+  font-weight: 400;
+}
+
+.noDataBody {
+  position: relative;
+  padding: 40px 0 50px;
+  border-left: grayBorder;
+  border-right: grayBorder;
+}
+
+.noScrollbarBody {
+  height: auto;
+}
+
+.toggle {
+  margin: 0 7px;
+}
+
+.toggle:first-child {
+  margin-left: 0;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.removeBtn {
+  flex: 0 0 80px;
+  margin: auto 10px auto 25px;
+}
+
+.configurations {
+  margin-right: 10px;
+  padding: 0px 13px;
+  line-height: 34px;
+  font-size: 21px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: whiteShadow;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 22px;
+}
+
+@media screen and (max-width: screen-md) {
+  .tbody {
+    height: auto;
+  }
+
+  .configurations {
+    display: inline-block;
+    height: 34px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+
+  .record:first-child {
+    margin-top: 15px;
+    border-top: grayBorder;
+  }
+
+  .value {
+    font-size: 13px;
+  }
+
+  .tbody .actions {
+    margin: 10px 0 0;
+    padding-right: 0;
+  }
+
+  .pagination {
+    padding: 15px;
+  }
+
+  .sort {
+    padding: 0 15px;
+  }
+
+  .noDataBody {
+    margin-top: 15px;
+    padding: 30px 0 50px;
+    border-top: grayBorder;
+    border-left: none;
+    border-right: none;
+  }
+}

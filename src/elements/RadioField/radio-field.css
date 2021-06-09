@@ -1,0 +1,62 @@
+@value theme: "Styles/theme.css";
+@value blue, validationRed, grayDark from theme;
+
+.wrapper {
+  position: relative;
+}
+
+.input {
+  display: none;
+}
+
+.hasError .label {
+  color: validationRed;
+}
+
+.label {
+  color: grayDark;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: -2px;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.label.focused {
+  color: blue;
+}
+
+.defaultOption {
+  margin: 0 20px 20px 0;
+}
+
+label.option {
+  cursor: pointer;
+}
+
+label.option:before {
+  position: relative;
+  top: 2px;
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: solid 1px #d2d9e4;
+  margin-right: 10px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+label.option.checked:before {
+  content: '\f111';
+  color: #f3f3f3;
+  font-family: FontAwesome;
+  font-size: 9px;
+  text-align: center;
+  line-height: 18px;
+  background-color: blue;
+  border: solid 0px blue;
+}

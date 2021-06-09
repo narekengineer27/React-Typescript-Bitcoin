@@ -1,0 +1,20 @@
+
+.modalBtn {
+    width: 150px;
+    margin: 5px;
+}
+
+.modalBtnWrapper {
+    width: fit-content;
+    margin: auto;
+}
+
+.modalTitle {
+    text-align: center;
+}
+
+.modalDesc {
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 0;
+}

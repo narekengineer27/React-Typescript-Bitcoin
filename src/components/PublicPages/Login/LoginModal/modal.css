@@ -1,0 +1,28 @@
+.noPadding {
+    padding: 0;
+    background-color: #F6F7F8;
+}
+
+.content {
+    width: 300px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.signin {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.submitBtn {
+    text-transform: unset;
+    margin: 20px auto;
+}

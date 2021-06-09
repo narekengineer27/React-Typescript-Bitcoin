@@ -1,0 +1,22 @@
+
+.mainContent {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 700px;
+  position: relative;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+.tabs {
+  max-width: 454px;
+  margin: 0 auto 50px;
+}
+
+.pager {
+  margin: 30px 0 120px 0;
+  text-align: center;
+}

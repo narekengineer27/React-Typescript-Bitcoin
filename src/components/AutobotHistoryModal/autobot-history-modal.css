@@ -1,0 +1,155 @@
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+
+    color: #5C7292;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.topContent {
+    display: flex;
+}
+
+.spanWrapper {
+    flex: 0 0 60px;
+    padding-top: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+
+    color: #5C7292;
+}
+
+.selectWrapper {
+    flex: 0 1 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.selectWrapper1 {
+    flex: 0 1 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tableSection {
+    padding-top: 20px;
+}
+
+
+.tbody {
+    height: 240px;
+    background-color: #fff;
+}
+
+.tbody, .noDataBody {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.tbody.noScrollbar {
+    height: auto;
+}
+
+.noDataWrapper{
+    height: 240px !important;
+}
+
+.td {
+    margin:auto;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: #00da66;
+}
+
+.blue {
+    color: #4599ff;
+}
+
+.descriptionSection {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.descriptionItem {
+    width: 380px;
+    display: flex;
+}
+
+.descriptionLeft {
+    flex: 0 1 85%;
+    text-align: right;
+}
+
+.descriptionRight {
+    flex: 0 1 15%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tableHeader {
+    text-align: center;
+}
+
+.tableHeaderItem {
+    line-height: 1.5;
+}
+
+.date {
+    flex: 0 1 17% !important;
+}
+
+.preset {
+    flex: 0 1 20% !important;
+}
+
+.suggestions {
+    flex: 0 1 20% !important;
+}
+
+.entry_price {
+    flex: 0 1 20% !important;
+}
+
+.performance {
+    flex: 0 1 23% !important;
+}
+
+.datetime {
+    text-align: center;
+    margin: auto;
+}

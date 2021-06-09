@@ -1,0 +1,74 @@
+@value theme: "Styles/theme.css";
+
+@value screen-md, blueText, grayDark, whiteShadow, white from theme;
+
+.title {
+  margin: 10vh 0 35px 0;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin: 0 auto 50px;
+  width: 585px;
+  font-size: 20px;
+  color: grayDark;
+}
+
+.role {
+  position: relative;
+  width: 690px;
+  margin: 0 auto 20px;
+  padding: 20px 40px 10px 25px;
+  display: block;
+  box-shadow: whiteShadow;
+  background-color: white;
+}
+
+.arrow {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+.roleTitle {
+  padding: 0 5px 15px 0;
+  display: inline-block;
+  font-weight: 200;
+  color: blueText;
+  font-size: 30px;
+}
+
+.roleDescription {
+  line-height: 22px;
+  color: grayDark;
+}
+
+@media screen and (max-width: screen-md) {
+  .title {
+    margin: 40px auto 20px;
+    padding: 0 15px;
+  }
+  .description {
+    width: 90%;
+    padding: 0 15px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .role {
+    width: 90%;
+    padding-right: 20px;
+  }
+  .roleTitle {
+    display: block;
+    padding-bottom: 0;
+    line-height:1;
+  }
+  .arrow {
+    top: 24px;
+  }
+  .roleDescription {
+    padding-top: 10px;
+  }
+}

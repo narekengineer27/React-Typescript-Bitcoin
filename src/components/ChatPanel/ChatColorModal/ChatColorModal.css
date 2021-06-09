@@ -1,0 +1,107 @@
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.content {
+  padding: 0px 100px;
+}
+
+.pharagraph {
+  display: block;
+  padding: 20px 0px;
+}
+
+.pharagraph_bottom {
+  color: #4fa3ff;
+}
+
+.agreeBtn {
+  display: block;
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.chat_color_button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+
+.chat_color_button:focus {
+  outline: none;
+}
+
+.button_outline {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.button1 {
+  background-color: #4599FF;
+}
+
+.button2 {
+  background-color: #13E091;
+}
+
+.button3 {
+  background-color: #F9BB4E;
+}
+
+.button4 {
+  background-color: #5C7292;
+}
+
+.button5 {
+  background-color: #8F9FB7;
+}
+
+.button6 {
+  background-color: #60E1FF;
+}
+
+.button7 {
+  background-color: #49C6FF;
+}
+
+.button8 {
+  background-color: #FF504F;
+}
+
+.button_outline_color1 {
+  border: 1px solid #4599FF;
+}
+
+.button_outline_color2 {
+  border: 1px solid #13E091;
+}
+
+.button_outline_color3 {
+  border: 1px solid #F9BB4E;
+}
+
+.button_outline_color4 {
+  border: 1px solid #5C7292;
+}
+
+.button_outline_color5 {
+  border: 1px solid #8F9FB7;
+}
+
+.button_outline_color6 {
+  border: 1px solid #60E1FF;
+}
+
+.button_outline_color7 {
+  border: 1px solid #49C6FF;
+}
+
+.button_outline_color8 {
+  border: 1px solid #FF504F;
+}

@@ -1,0 +1,77 @@
+@value theme: "Styles/theme.css";
+@value validationRed from theme;
+@value screen-md from theme;
+
+.errorTooltip {
+  left: 100%;
+  top: 3%;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+.errorTooltip.leftSide {
+  left: auto;
+  right: 100%;
+  margin-right: 10px;
+}
+
+.tooltipInner {
+  color: white;
+  background-color: validationRed;
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 8px 12px 8px 12px;
+  max-width: 500px;
+  font-size: 12px;
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  left: -5px;
+  top: 50%;
+}
+
+.leftSide .arrow {
+  right: -5px;
+  left: auto;
+}
+
+.arrow::before {
+  position: absolute;
+  margin-top: -3px;
+  content: "";
+  border-style: solid;
+  border-color: transparent;
+  border-width: 5px 5px 5px 0;
+  border-right-color: validationRed;
+}
+
+.leftSide .arrow::before {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent;
+  border-left-color: validationRed;
+}
+
+@media screen and (max-width: screen-md) {
+  .errorTooltip, .errorTooltip.leftSide {
+    top: auto;
+    left: auto;
+    right: 0;
+    margin: 5px 0 0 0;
+  }
+
+  .arrow, .leftSide .arrow {
+    right: 16px;
+    top: -2px;
+    left: auto;
+  }
+
+  .arrow::before, .leftSide .arrow::before {
+    border-width: 0 5px 5px;
+    border-color: transparent;
+    border-bottom-color: validationRed;
+  }
+}

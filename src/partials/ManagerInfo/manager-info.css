@@ -1,0 +1,33 @@
+@value theme: "Styles/theme.css";
+@value grayBorder, grayLight, white, grayDark from theme;
+
+.headerTitle {
+  padding: 17px 0 10px;
+}
+
+.assignForm {
+  border: grayBorder;
+  border-radius: 4px;
+  padding: 10px 20px 0;
+}
+
+.assignFormFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.assignFormFlexChild {
+  flex: 0 0 70%;
+}
+
+.fieldName {
+  font-size: 11px;
+  color: grayDark;
+  text-align: left;;
+}
+
+.assignRowFlexChild {
+  flex: 0 0 50%;
+  margin-bottom: 14px;
+}
+

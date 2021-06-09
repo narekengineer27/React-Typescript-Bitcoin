@@ -1,0 +1,158 @@
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: #5C7292;
+}
+
+.timeRemaining {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    color: #5C7292;
+}
+
+.imageWrapper {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.spinImage {
+    width: 60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.spinImageSection {
+    position: relative;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.spinImagePercent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.spinImageDesc {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+
+    color: #5C7292;
+}
+
+.smallDescWrapper {
+    width: 80px;
+    text-align: center;
+    margin:auto;
+}
+
+.fullDescWrapper {
+    width: 125px;
+    text-align: center;
+    margin:auto;
+}
+
+.red {
+    color: #FF504F;
+}
+
+.green {
+    color: #13E091;
+}
+
+.orange {
+    color: #F9BB4E;
+}
+
+.blue {
+    color: #4599FF;
+}
+
+.countDisplays {
+    display: table;
+    margin: auto;
+    padding: 10px;
+}
+
+.displayItem {
+    display: table-cell;
+    text-align: center;
+    padding: 2px 5px;
+}
+
+.displayItemContent {
+    padding: 2px 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px #969696;
+    width: 67px;
+    height: 57px;
+}
+
+.displayCount {
+    display: block;
+    color: #f9bb4e;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: center;
+    line-height: 36px;
+}
+
+.displayDesc {
+    display: block;
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 12px;
+}
+
+.registerBtnWrapper {
+    width: fit-content;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.registerBtn {
+
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

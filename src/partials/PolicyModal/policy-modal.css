@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.pharagraph {
+    display: block;
+    padding: 20px 0px;
+}
+
+.pharagraph_bottom {
+    color: #4fa3ff;
+}
+
+.agreeBtn {
+    display: block;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+}

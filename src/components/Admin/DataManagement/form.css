@@ -1,0 +1,19 @@
+@value theme: "Styles/theme.css";
+@value grayBorder, grayDark, white from theme;
+
+.wrapper {
+  padding: 20px;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.title {
+  font-weight: 300;
+  padding: 0 0 20px 10px;
+}
+
+.saveBtn {
+  margin-top: 20px;
+  text-align: right;
+}

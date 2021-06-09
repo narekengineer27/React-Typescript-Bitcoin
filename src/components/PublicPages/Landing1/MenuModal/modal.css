@@ -1,0 +1,121 @@
+.tabList {
+    display: flex;
+    list-style-type: none;
+}
+
+.tabItem {
+    flex: 0 1 20%;
+    /* border-top: 1px solid; */
+    border-left: 1px solid rgba(143, 159, 183, 0.38);
+    border-bottom: 1px solid rgba(143, 159, 183, 0.38);
+    padding: 10px;
+    background-color: #f6f7f9;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.noPadding {
+    padding: 0px !important;
+    background-color: white;
+}
+
+.panel {
+    padding: 20px 100px 0px 100px;
+    text-align: center;
+    color: #5c7292;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.panel_head {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.panel_head span {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.panel_footer {
+    margin: 0 -100px;
+    position: relative;
+}
+
+.panel_footer img {
+    margin-top: 20px;
+    width: 100%;
+    /* height: 350px; */
+}
+
+.panel_footer .forthSectionItemDescButton {
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 50px;
+}
+
+.footer_head {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.panel_head img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.panel_text {
+    text-align: left;
+}
+
+.modal_market {
+    margin: 0 -50px;
+}
+
+.modal_token {
+    margin: 0 -50px;
+}
+
+.modal_exchanges {
+    margin: 0;
+    padding: 30px;
+}
+
+.modal_market img {
+    margin-top: 50px;
+}
+
+.modal_token img {
+    margin-top: -20px;
+}
+
+.modal_exchanges img {
+    margin-top: 50px;
+}
+
+.btnGroup {
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+.ml_10 {
+    margin-left: 10px;
+}

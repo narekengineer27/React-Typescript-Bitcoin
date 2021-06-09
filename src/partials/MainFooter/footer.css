@@ -1,0 +1,138 @@
+@value theme: "Styles/theme.css";
+
+@value blueText, grayDark, gray, blue, screen-md, screen-lg from theme;
+
+.footer {
+    padding: 30px;
+    border-top: 1px solid #bcbdbe;
+}
+
+.footerDesc {
+    text-align: center;
+}
+
+.footerDesc span {
+    display: block;
+}
+
+.disclaimer {
+    margin-top: 20px;
+}
+
+.disclaimerDesc {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footerMenu {
+    list-style: none;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.footerMenu li {
+    display: inline-block;
+    margin: 8px 20px 8px 0;
+}
+
+.footerMenu li:last-child {
+    margin-right: 0;
+}
+
+.footerMenu a {
+    color: rgba(42, 43, 44, 0.84);
+}
+
+.footerMenu a:hover {
+    color: #4fa3ff;
+}
+
+.topFooterMenuWrapper {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.secondFooterMenuWrapper {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    font-size: 14px;
+}
+
+.topLeftMenuWrapper {
+    position: absolute;
+    left: 20px;
+}
+
+.topRightMenuWrapper {
+position: absolute;
+right: 20px;
+}
+
+.secondLeftMenuWrapper {
+    position: absolute;
+    left: 0px;
+}
+
+.secondRightMenuWrapper {
+    position: absolute;
+    right: 0px;
+    display: table;
+}
+
+.secondRightMenuWrapper span {
+    display: table-cell;
+}
+
+.footerDesc {
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: screen-md) {
+    
+    .topFooterMenuWrapper {
+      position: relative;
+      height: auto;
+      width: 100%;
+      max-width: 1440px;
+      margin: auto;
+      font-size: 18px;
+    }
+  
+    .secondFooterMenuWrapper {
+      position: relative;
+      height: auto;
+      width: 100%;
+      max-width: 1440px;
+      margin: auto;
+      font-size: 14px;
+    }
+  
+    .topLeftMenuWrapper {
+      position: relative;
+      left: 0px;
+    }
+  
+    .topRightMenuWrapper {
+      position: relative;
+      right: 0px;
+    }
+  
+    .secondLeftMenuWrapper {
+      position: relative;
+      left: 0px;
+    }
+  
+    .secondRightMenuWrapper {
+      position: relative;
+      right: 0px;
+    }
+  
+}

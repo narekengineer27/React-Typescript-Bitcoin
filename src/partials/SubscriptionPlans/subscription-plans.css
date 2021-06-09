@@ -1,0 +1,59 @@
+@value theme: "Styles/theme.css";
+@value screen-md, grayBorder, blue from theme;
+
+.wrapper {
+  width: 670px;
+  margin: 0 auto;
+}
+
+.content {
+  border: grayBorder;
+  border-radius: 4px;
+  padding: 30px;
+  width: 325px;
+  background-color: white;
+}
+
+.contentOne {
+  margin-right: 20px;
+}
+
+.subscription-plan {
+  border-bottom: grayBorder;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+
+.li {
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.icon {
+  padding-right: 10px;
+  color: blue;
+}
+
+.plan {
+  border-bottom: grayBorder;
+  height: 370px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: screen-md) {
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .content {
+    width: 100%;
+    margin: 5px 15px;
+    padding: 20px;
+  }
+  .contentOne{
+    margin-bottom: 20px;
+  }
+  .plan {
+    height: auto;
+  }
+}

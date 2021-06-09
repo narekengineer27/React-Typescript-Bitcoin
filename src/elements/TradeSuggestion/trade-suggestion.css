@@ -1,0 +1,10 @@
+@value theme: "Styles/theme.css";
+@value blue, green, orange, red from theme;
+
+.sell {
+  color: green;
+}
+
+.hold {
+  color: orange;
+}

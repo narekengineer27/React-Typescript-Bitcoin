@@ -1,0 +1,79 @@
+@value theme: "Styles/theme.css";
+@value screen-md, grayBorder, grayLight, white, grayDark from theme;
+
+
+.table {
+  width: 100%;
+  margin-top: 15px;
+  padding: 0 20px 20px;
+  border-right: grayBorder;
+}
+
+.scrollableTable {
+  height: 350px;
+  position: relative;
+}
+
+.table .actions1 {
+  flex: 0 0 135px;
+}
+
+.table .actions2 {
+  flex: 0 0 270px;
+}
+
+.table .actions3 {
+  flex: 0 0 330px;
+}
+
+.btn {
+  margin-right: 15px;
+}
+
+.managerReportsWrapper {
+  border: grayBorder;
+  border-right: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  height: 200px;
+}
+
+.managerReports {
+  padding: 5px 33px 15px 20px;
+}
+
+.answerWrapper {
+  display: flex;
+  justify-content: space-between;
+  border-top: grayBorder;
+  padding: 10px 0;
+}
+
+.question {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 0 8px;
+}
+
+.answer {
+  font-size: 13px;
+}
+
+.correct {
+  font-size: 13px;
+  font-weight: 500;
+  color: green;
+
+}
+
+.wrong {
+  font-size: 13px;
+  font-weight: 500;
+  color: red;
+}
+
+.noScrollbar {
+  border: grayBorder;
+  border-radius: 4px;
+  margin-top: 20px;
+}

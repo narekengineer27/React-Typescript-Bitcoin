@@ -1,0 +1,57 @@
+.react-tabs__tab {
+    display: inline-block;
+    /* border: 1px solid transparent; */
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    cursor: pointer;
+    border-color: #677d9d;
+}
+
+.react-tabs__tab--selected {
+    background: #fff;
+    border-color: #cfd5e1;
+    color: black;
+    border-radius: 0px 0px 0 0;
+    border-bottom: none;
+}
+
+.tradeTabList {
+    // border-bottom: 1px solid #aaa;
+    margin: 0 0 10px;
+    padding: 0;
+    display: flex;
+}
+
+.tradeTabItem {
+    display: inline-block;
+    flex: 0 1 12.5%;
+    font-size: 12px;
+    text-align: center;
+    /* border: 1px solid transparent; */
+    // bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    border: none;
+    border-right: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #eaebec;
+    cursor: pointer;
+    // border-color: #677d9d;
+}
+
+.tradeTabItem.first {
+    border-left: 1px solid #aaa;
+}
+
+.tradeTabItem.react-tabs__tab--selected {
+    // border: 1px solid #aaa;
+    border-bottom: none;
+    background-color: #fff;
+}

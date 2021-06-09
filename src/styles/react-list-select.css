@@ -1,0 +1,81 @@
+:global .react-list-select {
+	display: inline-block;
+	position: relative;
+	outline: none;
+}
+
+:global .react-list-select--item {
+	padding: 0.3em 0.6em;
+	cursor: pointer;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+:global .react-list-select--item.is-selected {
+	-webkit-user-select: inherit;
+	-moz-user-select: inherit;
+	-ms-user-select: inherit;
+	-o-user-select: inherit;
+	user-select: inherit;
+}
+
+:global .react-list-select--item.is-disabled {
+	cursor: default;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Add some style to the list */
+
+:global .react-list-select {
+	background: #fafafa;
+	border: 1px solid #cacaca;
+	margin-right: 0.5em;
+}
+:global .react-list-select--item.is-selected {
+	background: #d7e7ff;
+}
+:global .react-list-select:focus .react-list-select--item.is-focused::before,
+:global .react-list-select:focus .react-list-select--item.is-focused::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background: #79b9ff;
+}
+:global .react-list-select:focus .react-list-select--item.is-focused::before {
+	left: 0;
+}
+:global .react-list-select:focus .react-list-select--item.is-focused::after {
+	right: 0;
+}
+:global .react-list-select--item.is-disabled {
+	color: #afafaf;
+}
+
+.context-menu .react-list-select {
+	padding: 0.3em 0;
+}
+.context-menu .react-list-select--item {
+	font-size: 0.8125em;
+}
+
+/* Component in list - last example */
+
+.contact {
+	padding: 0.5em;
+}
+.contact .email {
+	font-size: 0.675em;
+	color: #999;
+}
+

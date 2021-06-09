@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "extends": "airbnb",
+  "settings":{
+    "import/extensions": [".js", ".jsx"]
+  },
+  "rules": {
+    "react/jsx-filename-extension": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-no-bind": 0,
+    "react/require-default-props": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "import/no-named-as-default": 0,
+    "import/prefer-default-export": 0,
+    "no-case-declarations": 0,
+    "no-underscore-dangle": 0,
+    "class-methods-use-this": 0,
+    "no-param-reassign": 0,
+    "default-case": 0,
+    "no-script-url": 0,
+    "comma-dangle": [
+      "error", {
+        "functions": "never",
+        "arrays": "never",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline"
+      }
+    ],
+    "no-confusing-arrow": ["error", {"allowParens": true}]
+  },
+  "globals": {
+    "document": true,
+    "_": true,
+    "window": true,
+    "localStorage": true,
+    "location": true,
+    "Twilio": true
+  }
+}

@@ -1,0 +1,19 @@
+@value theme: "Styles/theme.css";
+@value white, red from theme;
+
+.page {
+  padding: 50px 20px 20px;
+}
+
+.badge {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  padding: 5px;
+  line-height: 1;
+  color: white;
+  font-size: 12px;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+}

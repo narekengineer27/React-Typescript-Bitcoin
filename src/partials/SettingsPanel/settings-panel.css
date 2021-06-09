@@ -1,0 +1,66 @@
+@value theme: "Styles/theme.css";
+@value screen-md, white, grayBorder, blueText, bgLight from theme;
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  border: grayBorder;
+  border-radius: 4px;
+}
+
+.panel {
+  flex: 0 0 30%;
+  background-color: white;
+  border-top-left-radius: 4px;
+  max-width: 335px;
+}
+
+.menu {
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 30px;
+  border-bottom: grayBorder;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  cursor: pointer;
+  color: blueText;
+}
+
+.menu:first-child {
+  border-top-left-radius: 4px;
+}
+
+.active.menu {
+  background-color: bgLight;
+  border-right: none;
+  font-weight: 500;
+}
+
+.active .menuLink {
+  position: relative;
+  right: -1px;
+  border-right: 1px solid bgLight;
+}
+
+.main {
+  flex: 1 1 70%;
+  border-left: grayBorder;
+  background-color: bgLight;
+}
+
+@media screen and (max-width: screen-md) {
+  .wrapper {
+    display: block;
+    margin: 20px auto;
+    border: none;
+  }
+  .main {
+    border: none;
+  }
+  .menuDropdown {
+    margin: 0 15px;
+  }
+}

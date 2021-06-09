@@ -1,0 +1,78 @@
+.wrapper {
+   padding: 50px;
+   max-width: 1200px;
+   margin:auto;
+}
+
+.title {
+    color: #5c7292;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contentWrapper {
+
+}
+
+.topContent {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.topFormWrapper {
+    display: flex;
+}
+
+.processList {
+    margin: 20px;
+    border-radius: 4px;
+    border: 1px solid #d2dae5;
+    height: 60px;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.tableView {
+
+}
+
+.topFormText {
+    flex: 0 0 100px;
+    padding-top: 5px;
+}
+
+.topFormBtn {
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.processItem {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.oneRowItemWrapper {
+    display: flex;
+}
+
+.oneRowTextWrapper {
+    flex: 0 1 30%;
+}
+
+.oneRowSelectWrapper {
+    flex: 0 1 70%;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #d2dae5;
+}
+
+.oneRowFixedTd {
+    width: 100px;
+}

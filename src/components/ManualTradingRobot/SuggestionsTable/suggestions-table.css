@@ -1,0 +1,80 @@
+@value theme: "Styles/theme.css";
+@value blueText, blue, grayBorder, bgDark from theme;
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper .header, .wrapper .cell {
+  flex: 0 1 9%;
+}
+
+.wrapper .target {
+  flex: 0 1 11%;
+}
+
+.wrapper .btc-liquidity-bought {
+  flex: 0 1 16%;
+}
+
+.wrapper .btc-liquidity-bought:hover {
+  background-color: #ebf0f5;
+}
+
+.wrapper .overall-score {
+  flex: 0 0 100px;
+}
+
+.wrapper .id {
+  flex: 0 0 50px;
+}
+
+.wrapper .spaced {
+  width: 100%;
+  line-height: 24px;
+}
+
+.wrapper .combinedHeader {
+  text-align: center;
+  color: blue;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.wrapper .parametersHeader {
+  flex: 0 1 45%;
+}
+
+.wrapper .priceParameters {
+  flex: 0 1 27%;
+}
+
+.wrapper .filterTh {
+  flex: 0 0 90px;
+  position: relative;
+  padding: 5px;
+}
+
+.wrapper .filterInput {
+  width: 100%;
+  font-size: 12px;
+  padding: 5px 25px 5px 5px;
+}
+
+.wrapper .filterTh:after {
+  content: '\f002';
+  font-family: FontAwesome;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  font-size: 12px;
+  color: blueText;
+}
+
+.wrapper .actions, .wrapper .actionsHeader {
+  flex: 0 0 220px;
+}
+
+.wrapper .coin {
+  flex: 0 0 90px;
+}

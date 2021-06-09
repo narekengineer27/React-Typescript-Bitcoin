@@ -1,0 +1,134 @@
+@value theme: "Styles/theme.css";
+
+@value screen-md, blue, grayBorder, grayLight, white, grayDark, blueText, green, blueDark from theme;
+
+.wrapper {
+  padding: 20px 0 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.cycleIcon {
+  border: grayBorder;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.cycleTitle {
+  position: relative;
+  bottom: 4px;
+}
+
+.cycle {
+  display: flex;
+  color: grayDark;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.boughtAndProfit {
+  margin-top: 5px;
+  font-weight: 400;
+  color: blueText;
+}
+
+.amount {
+  color: blueText;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#tradesTable {
+  font-size: 11px;
+}
+
+#tradesTable .created_at {
+  flex: 0 0 100px;
+}
+
+#tradesTable .pair {
+  flex: 0 0 100px;
+}
+
+#tradesTable .price_bought {
+  flex: 1 0 13%;
+}
+
+#tradesTable .bought, #tradesTable .sold {
+  flex: 0 0 47%;
+}
+
+#tradesTable .sold {
+  color: blue;
+}
+
+#tradesTable .profit {
+  flex: 1 0 13%;
+}
+
+#tradesTable .suggestion {
+  flex: 0 0 95px;
+}
+
+#tradesTable .status {
+  flex: 0 0 80px;
+}
+
+#tradesTable .flag {
+  cursor: pointer;
+}
+
+.pagination {
+  padding: 20px;
+  text-align: center;
+}
+
+.profitsLeft {
+  flex: 0 0 55%;
+  color: green;
+}
+
+.profitsRight {
+  flex: 0 0 43%;
+  color: green;
+}
+
+.topNumbers {
+  color: blueText;
+  font-size: 11px;
+}
+
+.records {
+  position: relative;
+}
+
+.tradesDetails {
+  margin-bottom: 20px;
+}
+
+.tradingActivityBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalProfit {
+  font-size: 20px;
+}
+
+.usd {
+  color: green;
+  font-weight: 500;
+}
+
+.btc {
+  color: blue;
+  font-weight: 500;
+}

@@ -1,0 +1,5 @@
+{
+  "generalErrorMessage": "We failed to perform your requests.",
+  "invalidAPIResponse": "The API response is not well formatted.",
+  "failedBittrexAPICall": "Could not retrieve BITTREX data."
+}

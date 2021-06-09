@@ -1,0 +1,43 @@
+@value theme: "Styles/theme.css";
+@value screen-md, white, blue from theme;
+
+.wrapper {
+  width: calc(100% - 2px);
+  left: 1px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  min-height: 100px;
+  opacity: 0.7;
+  background-color: white;
+  z-index: 999;
+}
+
+.wrapper.transparent {
+  background-color: transparent;
+}
+
+.wrapper i {
+  margin: 0 auto;
+  color: blue;
+}
+
+.large.wrapper i {
+  font-size: 60px;
+}
+
+.medium.wrapper i {
+  font-size: 48px;
+}
+
+.small.wrapper i {
+  font-size: 36px;
+}
+
+@media screen and (max-width: screen-md) {
+  .wrapper {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+  }
+}

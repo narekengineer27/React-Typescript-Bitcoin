@@ -1,0 +1,53 @@
+@value theme: "Styles/theme.css";
+@value blue from theme;
+@value screen-sm from theme;
+
+.group {
+  margin-bottom: 20px;
+}
+
+.disabled.group {
+  opacity: .7;
+}
+
+.small.group {
+  margin-bottom: 15px;
+}
+
+.noMargin.group {
+  margin: 0;
+}
+
+.input {
+  display: none;
+}
+
+.group label:before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #d2d9e4;
+  margin-right: 12px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.groupChecked label:before {
+  content: '\f00c';
+  color: #f3f3f3;
+  font-family: FontAwesome;
+  font-size: 13px;
+  text-align: center;
+  line-height: 18px;
+  background-color: blue;
+  border: solid 1px blue;
+}
+
+@media screen and (max-width: screen-sm) {
+  .group {
+    margin-bottom: 15px;
+  }
+}

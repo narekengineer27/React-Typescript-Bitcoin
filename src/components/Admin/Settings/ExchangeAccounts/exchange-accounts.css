@@ -1,0 +1,22 @@
+@value theme: "Styles/theme.css";
+@value grayDark from theme;
+
+.description {
+  font-size: 19px;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+
+.icon {
+  padding-left: 15px;
+  color: grayDark;
+}
+
+.addDescription {
+  font-size: 19px;
+  color: grayDark;
+}
+
+.removeBtn {
+  margin-right: 15px;
+}

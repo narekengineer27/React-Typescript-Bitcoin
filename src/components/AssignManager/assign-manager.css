@@ -1,0 +1,115 @@
+@value theme: "Styles/theme.css";
+@value screen-md, grayBorder, grayLight, white, grayDark from theme;
+
+.content {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: grayBorder;
+  background-color: grayLight;
+}
+
+.filters {
+  width: 300px;
+}
+
+.nameFilter {
+  position: relative;
+  top: 10px;
+}
+
+.table {
+  width: 100%;
+  padding: 0 20px 20px;
+  border-right: grayBorder;
+}
+
+.help {
+  flex: 0 0 305px;
+  padding: 30px 10px 20px 30px;
+  background-color: white;
+}
+
+.helpTitle {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.paragraph {
+  margin: 20px 0;
+}
+
+.scrollableTable {
+  height: 350px;
+  position: relative;
+}
+
+.headerTitle {
+  padding: 17px 0 10px;
+}
+
+.assignForm {
+  border: grayBorder;
+  border-radius: 4px;
+  padding: 10px 20px 0;
+}
+
+.assignFormFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.assignFormFlexChild {
+  flex: 0 0 70%;
+}
+
+.fieldName {
+  font-size: 11px;
+  color: grayDark;
+  text-align: left;;
+}
+
+.assignRowFlexChild {
+  flex: 0 0 50%;
+  margin-bottom: 14px;
+}
+
+.searchIcon {
+  position: relative;
+  top: -52px;
+  left: 198px;
+  font-size: 17pxF;
+}
+
+@media screen and (max-width: screen-md) {
+  .content {
+    margin: 0;
+    display: block;
+    border: none;
+  }
+
+  .table {
+    padding: 0;
+    border: none;
+  }
+
+  .help {
+    margin: 20px 15px 0;
+    padding: 30px 20px 20px;
+    border: grayBorder;
+    border-radius: 4px;
+  }
+
+  .mobileFilters {
+    padding: 15px;
+  }
+
+  .mobileSort {
+    padding: 15px 0 0;
+  }
+
+  .filtersHolder {
+    padding-top: 15px;
+  }
+}

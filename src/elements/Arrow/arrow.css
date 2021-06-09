@@ -1,0 +1,26 @@
+@value theme: "Styles/theme.css";
+
+@value blue from theme;
+
+.link {
+  color: blue;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.link--arrowed {
+  display: inline-block;
+}
+
+.arrow-icon {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+}
+
+.arrow-icon--circle {
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+  stroke-dashoffset: 0;
+}

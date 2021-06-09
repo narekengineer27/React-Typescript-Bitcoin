@@ -1,0 +1,35 @@
+@value theme: "Styles/theme.css";
+
+@value screen-xl, bgLight, grayBorder, blueText, grayDark, profitColor, lossColor, zeroColor, blue, green, whiteShadow, orange from theme;
+
+.dropAccountPrefix {
+  color: grayDark;
+}
+
+.dropAccountName {
+  font-weight: bold;
+}
+
+.dropAccountOpen {
+  text-align: left;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ebf0f5;
+  cursor: pointer;
+}
+
+.dropAccountOpen:hover {
+  background-color: #ebf0f5;
+}
+
+.dropAccountExchange {
+  font-size: 11px;
+  font-weight: bold;
+  color: blue;
+}
+
+.dropAccountActive {
+  float: right;
+  font-size: 11px;
+  font-weight: bold;
+  color: green;
+}

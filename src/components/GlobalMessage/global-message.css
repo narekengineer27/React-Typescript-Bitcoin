@@ -1,0 +1,67 @@
+@value theme: "Styles/theme.css";
+@value blue, blueShadow, green, greenShadow, red, redShadow, orange from theme;
+@value screen-sm from theme;
+
+.list {
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 0 auto;
+  max-width: 740px;
+}
+
+.base {
+  padding: 13px 20px;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.base:first-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.close {
+  float: right;
+  width: 36px;
+  font-size: 16px;
+  text-align: right;
+  height: 20px;
+  cursor: pointer;
+}
+
+.close i {
+  margin-top: -6px;
+  color: white;
+}
+
+.error {
+  background-color: red;
+  box-shadow: redShadow;
+}
+
+.warning {
+  background-color: orange;
+}
+
+.info {
+  background-color: blue;
+  box-shadow: blueShadow;
+}
+
+.success {
+  background-color: green;
+  box-shadow: greenShadow;
+}
+
+:global(.fa-times-thin):before {
+  content: '\00d7';
+}
+
+@media screen and (max-width: screen-sm) {
+  .base {
+    margin: 0 10px;
+  }
+}

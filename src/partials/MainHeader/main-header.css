@@ -1,0 +1,228 @@
+@value theme: "Styles/theme.css";
+@value grayBorder, grayDark, blue, blueText from theme;
+@value screen-md, screen-xl from theme;
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(103, 125, 157, 0.1);
+}
+
+.headerLayout {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    background-image: url(/public/assets/images/xchangerate-logo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 182px;
+    height: 71px;
+}
+
+.navigationBox {
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.navigation .menu {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 75px;
+    height: 70px;
+    border-bottom: solid 2px transparent;
+    margin-right: 51px;
+    padding: 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.navigation .menu a {
+    color: blueText;
+}
+
+.navigation .menu.active a {
+    color: blue;
+}
+
+.navigation .menu.active {
+    color: blue;
+    font-weight: 700;
+    border-bottom: solid 2px blue;
+}
+
+.right {
+    width: 225px;
+    margin-top: 15px;
+    text-align: left;
+    display: flex;
+}
+
+.notifier {
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.notifier img {
+    margin-top: 8px;
+}
+
+.notifier .pill {
+    position: absolute;
+    top: 2px;
+    right: 18px;
+    border-radius: 16px;
+    background-color: #ff5151;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    min-width: 16px;
+    min-height: 16px;
+    text-align: center;
+    padding: 3px 4px 0;
+    line-height: 11px;
+}
+
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 900;
+}
+
+.popup {
+    width: 252px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px 0 rgba(103, 125, 157, 0.12);
+    border: solid 1px #d2d9e4;
+    position: absolute;
+    left: -116px;
+    top: 55px;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+
+/* Arrow start */
+
+.popup:after,
+.popup:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+}
+
+.popup:after {
+    top: -19px;
+    left: 116px;
+    border-bottom-color: #fff;
+    border-width: 10px;
+}
+
+.popup:before {
+    top: -22px;
+    left: 115px;
+    border-bottom-color: #d2d9e4;
+    border-width: 11px;
+}
+
+
+/* Arrow end */
+
+.popupItem {
+    padding: 20px;
+    border-bottom: solid 1px #d2d9e4;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.popupItem:last-child {
+    border: none;
+}
+
+.popupItem .time {
+    color: blue;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: screen-xl) {
+    .headerLayout {
+        height: 103px;
+    }
+    .headerLayout::before {
+        content: '';
+        width: 100%;
+        order: 4;
+    }
+    .navigationBox {
+        order: 5;
+        margin-top: auto;
+        width: 100%;
+        text-align: left;
+        overflow: hidden;
+    }
+    .logo {
+        /*width: 160px;*/
+        height: 60px;
+    }
+    .navigation .menu {
+        line-height: 44px;
+        height: 44px;
+    }
+}
+
+.myAccountIcon {
+    display: none;
+}
+
+@media screen and (max-width: screen-md) {
+    .navigationBox {
+        height: 44px;
+        overflow-y: hidden;
+    }
+    .navigation {
+        overflow: scroll;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+    }
+    .navigation .menu {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .myAccountIcon {
+        display: inline;
+    }
+    .myAccountIcon i {
+        font-size: 20px;
+        top: 3px !important;
+    }
+    .myAccount {
+        display: none;
+    }
+    .right :global(.margin-right) {
+        margin-right: 10px;
+    }
+    .right {
+        width: auto;
+    }
+    .notifier {
+        margin-right: 12px;
+    }
+}

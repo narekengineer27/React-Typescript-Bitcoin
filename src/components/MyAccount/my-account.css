@@ -1,0 +1,136 @@
+@value theme: "Styles/theme.css";
+
+@value screen-sm, screen-md, screen-lg, grayBorder, grayDark, grayLight, bgLight, blue, gray, white, blueText, profitColor, lossColor, zeroColor, blue, green from theme;
+
+.wrapper {
+  padding-bottom: 20px;
+}
+
+.mainPanel {
+  margin-top: 0;
+  padding: 0;
+  border-radius: 4px;
+  background-color: grayLight;
+  border: grayBorder;
+}
+
+.tableHolder {
+  padding: 0;
+  border-bottom: grayBorder;
+  display: flex;
+}
+
+.tableHolder:last-child {
+  border-bottom: none;
+}
+
+.page {
+  padding: 50px 5% 20px;
+}
+
+.rightPanelSub {
+  margin: 0 auto;
+  width: 86%;
+  text-align: left;
+}
+
+.bottomPanel {
+  margin-top: 50px;
+  padding: 30px 0 10px;
+  border-top: grayBorder;
+  overflow: hidden;
+}
+
+.submitButton {
+  min-width: 250px;
+}
+
+.menusFullWidth {
+  width: auto;
+}
+
+.twoFactorWrapper {
+  border: grayBorder;
+  border-radius: 4px;
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.faApproachs {
+  padding-top: 15px;
+}
+
+
+.authenticationToggle {
+  font-size: 15px;
+  font-weight: 500;
+  color: blue;
+  padding-bottom: 15px;
+}
+
+.authenticationDescription {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.googleAuthentication {
+  display: flex;
+}
+
+.gaImgWrapper {
+  margin-right: 35px;
+  border: grayBorder;
+}
+
+.gaImg {
+  width: 140px;
+}
+
+@media screen and (max-width: screen-lg) {
+  .rightPanelSub {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: screen-md) {
+  .mainPanel {
+    border-radius: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .tableHolder {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page {
+    padding: 30px 0 0;
+  }
+
+  .rightPanelSub {
+    padding: 20px;
+  }
+
+  .bottomPanel {
+    margin-top: 20px;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+
+  .twoFactorWrapper {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .label {
+    padding-top: 10px;
+  }
+
+}
+
+

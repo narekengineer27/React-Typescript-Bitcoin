@@ -1,0 +1,410 @@
+@value theme: "Styles/theme.css";
+
+@value screen-lg, screen-md, screen-sm, orange, blue, white, bgDark, grayBorder, blueText, grayDark, publicPanelShadow, grayLight, green from theme;
+
+.wrapper {
+}
+
+.header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.users {
+  flex: 0 0 217px;
+}
+
+.header h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.activateButton {
+  width: 217px;
+}
+
+.activityButton {
+  width: 107px;
+  margin-right: 15px;
+}
+
+.stopButton {
+  width: 107px;
+}
+
+.shareButton {
+  margin-left: 15px;
+}
+
+.configureButton {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 19%;
+  height: 153px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 20px 0 rgba(103, 125, 157, 0.09);
+  margin: 11px 0;
+  text-align: center;
+  padding: 20px 15px 12px;
+  position: relative;
+}
+
+.card .title {
+  margin-top: 15px;
+  animation-name: fadeCard;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+}
+
+.card .textBox {
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  position: absolute;
+  top: 37px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.card .value {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card.blue .value {
+  color: blue;
+}
+
+.card.green .value {
+  color: #00d966;
+}
+
+.card.red .value {
+  color: #ff5151;
+}
+
+.card.orange .value {
+  color: orange;
+}
+
+.card .unit {
+  font-size: 13px;
+  line-height: 0;
+}
+
+.card img:not(.noSpin) {
+  animation: spin 8s linear infinite;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 20px 0 12px 0;
+}
+
+.progressLine, .progressLineGray {
+  height: 2px;
+  width: 100%;
+  background-color: #00d966;
+  position: absolute;
+}
+
+.progressLineGray {
+  z-index: 0;
+}
+
+.progressBullet, .progressBulletGray {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #00d966;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  line-height: 23px;
+  position: relative;
+}
+
+.progressLineGray, .progressBulletGray {
+  background-color: #ebf0f5;
+}
+
+.topSection {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  margin-top: 5px;
+  padding: 0 0 15px;
+  background-color: bgDark;
+  animation-name: fadeTopSection;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+.progressLine {
+  /*animation-name: grow;*/
+  /*animation-duration: 10s;*/
+  /*animation-timing-function: linear;*/
+  /*animation: grow 10s linear infinite;*/
+  width: 0;
+  transition: width 1s linear;
+}
+
+.progressBullet {
+  animation-name: fadeBullet;
+  animation-duration: 0.5s;
+}
+
+.checkIcon {
+  position: relative;
+  bottom: 1px;
+}
+
+.videoWrapper {
+  padding: 25px 0;
+  position: relative;
+}
+
+.headerTitle {
+  padding: 20px 0;
+}
+
+.video {
+  max-width: 100%;
+}
+
+.inactiveRobot {
+  width: 100%;
+  padding-top: 250px;
+}
+
+.configurationWrapper {
+  width: 335px;
+  border-radius: 4px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: publicPanelShadow;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+
+.configurationHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: grayBorder;
+  padding-bottom: 10px;
+}
+.configurationTitle {
+  font-size: 25px;
+}
+
+.icon {
+  position: relative;
+  bottom: 5px;
+}
+
+.configurationData {
+  padding-top: 30px;
+}
+
+.indexTitle {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ratioFlex {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.frugalityRatio  {
+  padding-top: 10px;
+}
+
+.ratioTitle {
+  flex: 0 0 75%;
+}
+.ratio {
+  font-weight: 500;
+}
+
+.logo {
+  background-image: url(/public/assets/images/xchangerate-logo.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 182px;
+  height: 71px;
+}
+
+.socialIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.shareHeaderTitle {
+  position: absolute;
+  top: 175px;
+  left: 97px;
+  color: grayDark;
+  font-size: 15px;
+}
+
+.shareWrapper {
+  border: grayBorder;
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 0 20px 20px;
+  background-color: grayLight;
+}
+
+.shareHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reportDate {
+  padding-top: 25px;
+  color: grayDark;
+  font-size: 15px;
+}
+
+.mainReport {
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px 18px 25px;
+  margin-top: 25px;
+}
+
+.faIcon {
+  color: green;
+}
+
+.profitTitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: blueText;
+}
+
+.profitTitle.cycleCount {
+  font-weight: 400;
+}
+
+.profit {
+  color: green;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.linkLeft {
+  flex: 0 0 65%;
+  position: relative;
+  bottom: 10px;
+}
+
+.shareOnSocial {
+  margin-bottom: 0;
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: 500;
+  color: blueText;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeBullet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fadeTopSection {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeCard {
+  0% {
+    transform: scaleX(0.95);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: screen-lg) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    flex: 0 0 31%;
+    margin-right: 2%;
+  }
+
+  .videoWrapper {
+    padding-top: 300px;
+  }
+}
+
+@media screen and (max-width: screen-sm) {
+  .card {
+    flex: 0 0 75%;
+    margin-right: 0;
+  }
+
+  .videoWrapper {
+    padding-top: 900px;
+  }
+}

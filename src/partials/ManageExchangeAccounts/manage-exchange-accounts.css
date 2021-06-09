@@ -1,0 +1,76 @@
+@value theme: "Styles/theme.css";
+
+@value blue, gray from theme;
+
+@value screen-sm from theme;
+
+.content {
+  padding: 1em 0;
+}
+
+.headerTitle {
+  padding: 20px 0;
+}
+
+.form {
+  padding-top: 20px;
+}
+
+.formAccountName {
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.accountList {
+  padding-top: 10px;
+  min-height: 246px;
+}
+
+.account {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fbfcfe;
+  border: solid 1px gray;
+}
+
+.accountName {
+  font-size: 25px;
+  font-weight: 500;
+  color: blue;
+}
+
+.exchangeName {
+  font-size: 13px;
+}
+
+.buttons {
+  text-align: right;
+}
+
+.edit {
+  width: 90px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: screen-sm) {
+  .buttons {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  .edit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: screen-sm) {
+  .add {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,269 @@
+@value theme: "Styles/theme.css";
+
+@value screen-xl, bgLight, grayBorder, blueText, grayDark, profitColor, lossColor, zeroColor, blue, green, whiteShadow, orange from theme;
+
+.wrapper {
+  padding-bottom: 20px;
+}
+
+.mainPanel {
+  border-radius: 4px;
+  background-color: #fbfcfe;
+  border: grayBorder;
+  margin-top: 30px;
+  padding: 20px 0 0;
+}
+
+.tableHolder {
+  padding: 20px;
+  border-bottom: grayBorder;
+}
+
+.tableHolder:last-child {
+  border-bottom: none;
+}
+
+.tradesTableWrapper {
+  padding: 0 20px;
+}
+
+.header {
+  padding-top: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.settings, .exchanges {
+  position: absolute;
+  top: 30px;
+  text-align: left;
+}
+
+.exchanges {
+  width: 230px;
+}
+
+.boards {
+  width: 455px;
+  margin: 0 auto;
+}
+
+.settings {
+  height: 40px;
+  line-height: 40px;
+  right: 0;
+  display: flex;
+}
+
+.mode, .configurations {
+  padding: 0 15px;
+  background-color: white;
+  border-radius: 4px;
+  margin-right: 15px;
+  box-shadow: whiteShadow;
+}
+
+.mode {
+  padding-top: 1px;
+  color: blueText;
+}
+
+.configurations {
+  color: grayDark;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.totals {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profits {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profit {
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border-right: grayBorder;
+}
+
+.profit:first-child {
+  padding-left: 0;
+}
+
+.profit:last-child {
+  border-right: none;
+}
+
+.type, .lastSyncLabel {
+  font-size: 11px;
+  font-weight: 500;
+  color: grayDark;
+}
+
+.totalProfit {
+  color: profitColor;
+}
+
+.profitFlatValue {
+  color: blue;
+}
+
+.profitRealized {
+  color: #5fc200;
+}
+
+.totalFlatValue {
+  color: orange;
+}
+
+.totalCapital {
+  color: blueText;
+}
+
+.lastSyncTime {
+  font-size: 18px;
+}
+
+.requestButton {
+  margin-left: 10px;
+}
+
+.types {
+  margin-bottom: 20px;
+}
+
+.setupWrapper {
+  text-align: center;
+  padding: 150px 50px 50px;
+}
+
+.setupWrapper p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 auto 60px;
+  color: grayDark;
+  max-width: 690px;
+}
+
+.setupWrapper h1 {
+  margin: 0 0 30px;
+}
+
+.setupActive {
+  margin-right: 20px;
+}
+
+.setupChoose, .setupActive {
+  width: 220px;
+}
+
+.setupFooter {
+  margin-top: 250px;
+}
+
+.addAccountWrapper {
+  text-align: center;
+  padding: 100px 50px 50px;
+}
+
+
+.addAccountWrapper h1 {
+  margin: 0;
+}
+
+.addAccountWrapper .successImage {
+  height: 180px;
+  margin: 40px 0 40px 0;
+}
+
+.addAccountWrapper p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 auto 32px;
+  color: grayDark;
+  max-width: 690px;
+}
+
+.addAccountWrapper .addAccount {
+  width: 200px;
+}
+
+@media screen and (max-width: screen-xl) {
+  .wrapper {
+    padding: 0;
+  }
+
+  .mainPanel {
+    margin-top: 0;
+    padding: 0;
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+  }
+
+  .header {
+    padding-top: 0;
+  }
+
+  .totals {
+    background-color: bgLight;
+  }
+
+  .boards {
+    width: auto;
+    margin: 20px 15px;
+  }
+
+  .settings {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 20px;
+    height: 61px;
+  }
+
+  .mode {
+    width: 100%;
+    text-align: center;
+  }
+
+  .configurations {
+    margin-right: 0;
+  }
+
+  .exchanges {
+    position: static;
+    width: 100%;
+  }
+
+  .profit {
+    flex: 0 0 50%;
+    padding: 0 20px;
+  }
+
+  .lastSyncTime {
+    font-weight: 400;
+  }
+
+  .profit:first-child {
+    padding: 0 20px;
+  }
+
+  .profit:nth-child(even) {
+    border-right: none;
+  }
+
+  .tableHolder {
+    padding: 10px 0 0;
+  }
+
+  .tradesTableWrapper {
+    padding: 0;
+  }
+}

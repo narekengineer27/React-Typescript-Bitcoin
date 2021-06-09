@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="0%" y1="0%" x2="50%" y2="88.7718962%" id="fadedGradient">
+      <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"/>
+      <stop stop-color="#4FA3FF" offset="50%"/>
+    </linearGradient>
+  </defs>
+
+  <g id="back" stroke-width="5" stroke="#F7F8F9" stroke-linecap="round" fill="none">
+    <circle cx="43" cy="43" r="40"/>
+  </g>
+
+  <g id="front" stroke="url(#fadedGradient)" stroke-linecap="round" stroke-width="5" fill="none">
+    <path d="M 43 3 A 40 40 0 1 1 43 83"/>
+  </g>
+
+</svg>

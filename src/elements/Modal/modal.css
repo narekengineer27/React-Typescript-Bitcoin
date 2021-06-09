@@ -1,0 +1,138 @@
+@value theme: "Styles/theme.css";
+@value screen-sm,
+blue from theme;
+.wrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    padding: 50px 15px;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    text-align: left;
+}
+
+.header {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #ebf0f5;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.header i {
+    position: relative;
+    bottom: 12px;
+    cursor: pointer;
+    height: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: solid 1px #ebf0f5;
+    text-align: right;
+}
+
+.leftFooter {
+    padding-top: 15px;
+}
+
+.cancel {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.width600 {
+    width: 600px;
+}
+
+.width500 {
+    width: 500px;
+}
+
+.width700 {
+    width: 700px;
+}
+
+.width800 {
+    width: 800px;
+}
+
+.width900 {
+    width: 900px;
+}
+
+.width1100 {
+    width: 1100px;
+}
+
+.transparent10 {
+    background-color: #fff;
+}
+
+.transparent5 {
+    background-color: #fffa;
+}
+
+.loader {
+    height: 300px;
+    opacity: 0.7;
+}
+
+.icon {
+    margin: 0 auto;
+    font-size: 60px;
+    color: blue;
+}
+
+.width1100 {
+    width: 1100px;
+}
+
+@media screen and (max-width: screen-sm) {
+    .wrapper {
+        display: block;
+        overflow-y: auto;
+    }
+    .container {
+        width: 100%;
+        bottom: auto;
+        position: relative;
+        margin: 0;
+        padding: 25px 20px 30px 20px;
+    }
+    .header {
+        min-height: initial;
+    }
+    .title {
+        font-size: 20px;
+    }
+}
+
+html.noScroll,
+.noScroll body {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}

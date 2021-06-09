@@ -1,0 +1,142 @@
+.noPadding {
+    padding: 0;
+    background-color: #F6F7F8;
+}
+
+.content {
+    padding: 40px 60px;
+    position: relative;
+    font-family: Roboto;
+    color: #5c7292;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.head {
+    color: #4599FF;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box {
+    border: 1px solid #888;
+    border-radius: 10px;
+    text-align: center;
+    background: white;
+    padding: 15px;
+}
+
+.boxIn {
+    text-align: center;
+}
+
+.blueFont {
+    color: #4599FF;
+    font-weight: bold;
+}
+
+.signup {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.boxhead {
+    border: 1px solid #d2dae5;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: center;
+    display: table;
+    margin-bottom: 15px;
+    background: white;
+}
+
+.explain {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.shareBtn {
+    padding: 5px 80px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.footer {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.w_3 {
+    width: 33.33%;
+    padding: 0 5px;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.addressText,
+.tokenText {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.address {
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    line-height: 2.4;
+}
+
+.token {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: #13E091;
+    padding: 5px 10px;
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.withdrawBtn {
+    text-transform: uppercase;
+    padding: 5px 20px;
+}
+
+.w_2_px_20 {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.submitBtn {}
+
+.mt_10 {
+    margin-top: 10px;
+}
+
+.signin {
+    cursor: pointer;
+    color: #4599FF;
+    font-weight: bold;
+}

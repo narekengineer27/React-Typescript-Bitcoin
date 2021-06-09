@@ -1,0 +1,35 @@
+@import "theme";
+
+.iScrollVerticalScrollbar {
+  width: 16px !important;
+  padding-top: 3px;
+  background: @white !important;
+  border-left: @grayBorder;
+  border-right: @grayBorder;
+  z-index: 2 !important;
+  top: 0 !important;
+  bottom: 1px !important;
+}
+
+.iScrollIndicator {
+  right: 3px;
+  width: 8px !important;
+  height: 80px;
+  border-radius: 4px;
+  background-color: @gray !important;
+}
+
+.chatoutputscroll::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+}
+
+.chatoutputscroll::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ccc;
+}
+

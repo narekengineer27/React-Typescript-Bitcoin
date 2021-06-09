@@ -1,0 +1,86 @@
+@value theme: "Styles/theme.css";
+@value grayDark, blueText, blue, green, grayBorder, bgLight, grayLightBorder from theme;
+@value screen-md from theme;
+
+.wrapper {
+  padding-top: 20px;
+}
+
+.description {
+  margin: 20px 0;
+}
+
+.parametersDescription {
+  padding: 20px 0 5px;
+}
+
+.conditionFieldsHolder {
+  border-bottom: grayLightBorder;
+}
+
+.conditionField {
+  border-top: grayLightBorder;
+  padding-top: 15px;
+}
+
+.fieldDescription {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 14px;
+  color: grayDark;
+}
+
+.target {
+  position: relative;
+  top: 10px;
+}
+
+.valueAchievedWrapper {
+  margin: 20px 0 10px;
+  padding: 20px 15px 0;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: bgLight;
+}
+
+.valueAchieved {
+  padding-bottom: 10px;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  margin-left: 50px;
+}
+
+.currency {
+  flex: 0 0 70px;
+  height: 50px;
+  padding-top: 10px;
+  border-bottom: grayBorder;
+}
+
+.alert {
+  padding: 8px 0 12px;
+}
+
+.nInterval {
+  width: 200px;
+}
+
+@media screen and (max-width: screen-md) {
+  .liquidityDescription {
+    margin-left: 33px;
+  }
+  .gap {
+    padding-top: 20px;
+  }
+  .cpp {
+    border-top: grayBorder;
+    padding-top: 20px;
+  }
+  .radioField {
+    margin-left: 50px;
+  }
+}

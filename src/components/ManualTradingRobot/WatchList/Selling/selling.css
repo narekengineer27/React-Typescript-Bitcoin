@@ -1,0 +1,113 @@
+@value theme: "Styles/theme.css";
+
+@value screen-md, blue, grayLight, grayDark, grayBorder, white, whiteShadow from theme;
+
+.tbody {
+  height: 820px;
+  position: relative;
+}
+
+.tbody.noScrollbar {
+  height: auto;
+  max-height: 820px;
+}
+
+.wrapper .profit_target {
+  flex: 1.5 1 0;
+}
+
+.tbody .exit {
+  flex: 0 0 330px;
+  padding-right: 20px;
+  overflow: visible;
+}
+
+.tbody .row .exit {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.noScrollbar .exit {
+  flex: 0 0 295px;
+}
+
+.description {
+  margin: 30px 0;
+}
+
+.noDataBody {
+  position: relative;
+  padding: 40px 0 50px;
+  border-left: grayBorder;
+  border-right: grayBorder;
+}
+
+.toggle {
+  margin: 0 5px;
+}
+
+.toggle:first-child {
+  margin-left: 0;
+}
+
+.removeBtn {
+  margin: auto 10px auto 50px;
+}
+
+.configurations {
+  padding: 3px 10px 0;
+  margin-right: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: whiteShadow;
+}
+
+.wrapper .exit {
+  flex: 0 0 330px;
+}
+
+@media screen and (max-width: screen-md) {
+  .tbody {
+    height: auto;
+    border-top: grayBorder;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .exitSettings {
+    position: relative;
+  }
+
+  .configurations {
+    margin-left: 15px;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 34px;
+  }
+
+  .value {
+    font-size: 13px;
+  }
+
+  .removeBtn {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .noDataBody {
+    margin-top: 15px;
+    padding: 30px 0 50px;
+    border-top: grayBorder;
+    border-left: none;
+    border-right: none;
+  }
+
+  .mobileSort, .pagination {
+    padding: 15px;
+  }
+}

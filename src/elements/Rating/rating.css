@@ -1,0 +1,27 @@
+@value theme: "Styles/theme.css";
+@value blue, grayDark from theme;
+
+.wrapper {
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.stars {
+  width: 90px;
+  padding: 3px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper i {
+  color: blue;
+}
+
+.emptyStar {
+  color: grayDark;
+}
+
+.reviews {
+  margin-left: 10px;
+  color: grayDark;
+}

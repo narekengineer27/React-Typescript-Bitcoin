@@ -1,0 +1,60 @@
+.wrapper {
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.track {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    background-color: white;
+}
+
+.checked {
+    background-color: #4fa3ff;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    top: -3px;
+    left: 15px;
+}
+
+.unchecked {
+    background-color: white;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    top: -3px;
+    left: 0px;
+}
+
+.leftChecked {
+    background-color: #4fa3ff;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    top: -3px;
+    left: 0px;
+}
+
+.leftUnchecked {
+    background-color: white;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    top: -3px;
+    left: 15px;
+}
+
+.ball {
+    position: absolute;
+    /* top: -3px;
+    left: 0px; */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(136, 148, 147, 0.35);
+    /* background-color: #4fa3ff; */
+}
+
+.red {
+    background-color: #ff5152;
+}
+
+.green {
+    background-color: #03da66;
+}

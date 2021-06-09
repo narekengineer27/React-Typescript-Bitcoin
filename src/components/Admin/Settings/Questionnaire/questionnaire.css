@@ -1,0 +1,49 @@
+@value theme: "Styles/theme.css";
+
+@value grayBorder, grayDark, blue, white from theme;
+
+.description {
+  margin-bottom: 8px;
+}
+
+.addNewQuestion {
+  width: 80%;
+  margin: 40px auto 300px;
+}
+
+.questionsWrapper {
+  border: grayBorder;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.question {
+  padding-top: 30px;
+}
+
+.answer {
+  border: grayBorder;
+  border-radius: 4px;
+  padding: 7px 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.icon {
+  position: relative;
+  bottom: 2px;
+  font-size: 24px;
+}
+
+.edit {
+  cursor: pointer;
+  color: blue;
+}
+
+.barsIcon {
+  padding-left: 10px;
+  color: grayDark;
+}

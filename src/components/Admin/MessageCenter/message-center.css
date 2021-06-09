@@ -1,0 +1,62 @@
+@value theme: "Styles/theme.css";
+@value grayBorder, grayLight from theme;
+
+.searchWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+.searchIcon {
+  position: relative;
+  top: -52px;
+  left: 198px;
+  font-size: 17pxF;
+}
+
+.countrySelect {
+  margin: 0 10px;
+  width: 150px;
+}
+
+.citySelect {
+  width: 150px;
+}
+
+.table .selectAll {
+  flex: 0 0 50px;
+}
+
+.table .actions {
+  flex: 0 0 250px;
+}
+
+.content {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: grayBorder;
+  background-color: grayLight;
+}
+
+.filters {
+  width: 150px;
+}
+
+.table {
+  width: 100%;
+  padding: 0 20px 20px;
+  border-right: grayBorder;
+}
+
+.scrollableTable {
+  height: 350px;
+  position: relative;
+}
+

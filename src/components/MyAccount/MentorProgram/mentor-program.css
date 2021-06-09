@@ -1,0 +1,237 @@
+@value theme: "Styles/theme.css";
+
+@value blue, blueText, gray, grayLightBorder, grayDark, screen-md from theme;
+
+.placeholder, .mainContent {
+  min-height: 700px;
+}
+
+.panelStart {
+  background-color: #ffffff;
+  border: solid 1px gray;
+  border-radius: 4px;
+  margin: 10px 40px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panelStartContent {
+  padding: 50px 50px 65px;
+}
+
+.panelStartLogo {
+  height: 140px;
+}
+
+.panelStart h1 {
+  color: blue;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+
+.panelStartMessage {
+  color: grayDark;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.panelStart p {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+.panelStart hr {
+  border-top: grayLightBorder;
+  margin: 30px 0;
+}
+
+.startLinkBox {
+  max-width: 450px;
+  margin: 50px auto 20px;
+}
+
+.startShare {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.startShare h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.registrationFooter {
+  min-height: 70px;
+  border-radius: 0 0 4px 4px;
+  background-color: #f9fcfe;
+  border-top: solid 1px #d2d9e4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  text-align: left;
+}
+
+.buttonRegister {
+  flex: 0 0 133px;
+  margin-left: 25px;
+}
+
+.panelTop {
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #d2dae5;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.panelTopContent {
+  display: flex;
+  padding: 30px;
+}
+
+.left {
+  padding-right: 30px;
+  border-right: grayLightBorder;
+  max-width: 550px;
+}
+
+.leftHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: blue;
+}
+
+.left h3 img {
+  width: 32px;
+  vertical-align: bottom;
+}
+
+.changeWallet {
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+
+.leftControls {
+  margin-bottom: -20px;
+}
+
+.linkBox {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.linkBox input {
+  color: blue;
+}
+
+.copy {
+  width: 133px;
+  margin: 10px 20px 0;
+}
+
+.shareButtons img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.right {
+  padding-left: 30px;
+}
+
+.right h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px 0 20px 0;
+}
+
+.referrals, .total {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.referrals label, .total label {
+  font-size: 11px;
+  font-weight: 500;
+  color: grayDark;
+  display: block;
+}
+
+.total {
+  color: blue;
+}
+
+.bottomPanel :global(.th) {
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.bottomPanel :global(.td):not(:global(.th)) {
+  font-size: 15px;
+  padding: 15px 20px;
+  background-color: #fff;
+}
+
+.modalFormContent {
+  padding: 20px 0 10px;
+}
+
+.modalFormContent p {
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  color: blueText;
+  margin-bottom: 30px;
+}
+
+:global(.customModalFooter).modalFooter {
+  padding-top: 0;
+  border: none;
+}
+
+@media screen and (max-width: screen-md) {
+  .startShare {
+    display: block;
+  }
+
+  .startShare h4 {
+    padding-bottom: 15px;
+  }
+
+  .panelStart p {
+    text-align: left;
+  }
+
+  .registrationFooter {
+    display: block;
+  }
+
+  .buttonRegister {
+    margin: 15px 25px;
+  }
+
+
+
+
+}

@@ -1,0 +1,22 @@
+@value theme: "Styles/theme.css";
+@value blue, green, orange, red from theme;
+
+.selling {
+  color: blue;
+}
+
+.sold {
+  color: green;
+}
+
+.bought {
+  color: orange;
+}
+
+.buy-order {
+  color: blue;
+}
+
+.sell-order {
+  color: red;
+}

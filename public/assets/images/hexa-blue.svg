@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="128px" viewBox="0 0 116 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape_blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.0117869%" y1="-28.8138216%" x2="50.0117869%" y2="86.426216%" id="linearGradient-1">
+            <stop stop-color="#43E9FF" offset="0%"></stop>
+            <stop stop-color="#4FA3FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M70.9476661,16.0057847 L43.0523338,1.37659529 C39.9259388,-0.458865095 36.0740612,-0.458865095 32.9476662,1.37659529 L5.05233386,16.0057847 C1.92559693,17.8414457 -0.000394721736,21.2340379 6.06791866e-08,24.90536 L6.06791866e-08,65.09464 C-0.000394721736,68.7659621 1.92559693,72.1585543 5.05233386,73.9942153 L32.9476662,88.6234047 C36.0740612,90.4588651 39.9259388,90.4588651 43.0523338,88.6234047 L70.9476661,73.9942153 C74.0744031,72.1585543 76.0003947,68.7659621 75.9999999,65.09464 L75.9999999,24.90536 C76.0003947,21.2340379 74.0744031,17.8414457 70.9476661,16.0057847 L70.9476661,16.0057847 Z" id="path-2"></path>
+        <filter x="-46.1%" y="-27.8%" width="192.1%" height="177.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.309803922   0 0 0 0 0.639215686   0 0 0 0 1  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Website-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2---Pricing-page" transform="translate(-344.000000, -552.000000)">
+            <g id="Packages" transform="translate(220.000000, 561.000000)">
+                <g id="PACK-1">
+                    <g id="Group-8" transform="translate(144.000000, 0.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Shape_blue" fill-rule="nonzero">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

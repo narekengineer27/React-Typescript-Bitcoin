@@ -1,0 +1,433 @@
+@value theme: "Styles/theme.css";
+
+@value screen-sm, screen-md, screen-lg, grayBorder, white, blue, grayDark from theme;
+
+@value blueText, profitColor, lossColor, zeroColor, green, blue from theme;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.currentAccount {
+  display: flex;
+}
+
+.accountName {
+  font-size: 25px;
+  color: blueText;
+}
+
+.exchangeName {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cycle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid green;
+  border-radius: 50%;
+  background-color: green;
+  margin: 13px 0 0 10px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.title {
+  margin: 0 0 30px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.smartSettings {
+  padding: 30px;
+  margin-bottom: 20px;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.smartSettingsToggle {
+  margin-right: 18px;
+  font-weight: 500;
+  font-size: 15px;
+  color: blue;
+}
+
+.globalSettings {
+  margin: 0 auto 50px;
+  text-align: left;
+}
+
+.robotRound {
+  flex: 0 0 50%;
+  padding: 30px;
+  border-right: grayBorder;
+}
+
+.noSmartRobotRound {
+  flex: 0 0 33.33%;
+  padding: 30px 30px 10px 0;
+  border-right: grayBorder;
+}
+
+.robotRoundTextField {
+  display: flex;
+  justify-content: space-between;
+}
+
+.robotRoundDays {
+  flex: 0 0 48%;
+  margin-bottom: 20px;
+  border-bottom: grayBorder;
+}
+
+.customSelectWrapper {
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.robotRoundSelectField {
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.cyclesPerRound {
+  flex: 0 0 50%;
+  padding: 30px;
+}
+
+.noSmartCyclesRound {
+  padding-left: 30px;
+}
+
+.noSmartCycles {
+  width: 110px;
+}
+
+.noSmartAge {
+  padding-left: 30px;
+  border-right: none;
+}
+
+.frScore {
+  padding-bottom: 15px;
+}
+
+.radioFieldTitile {
+  color: zeroColor;
+}
+
+.openPositionsTitile {
+  color: zeroColor;
+}
+
+.option {
+  margin-bottom: 12px;
+  margin-right: 20px;
+}
+
+.determinantWrapper {
+  width: 90%;
+  padding: 20px 20px 0;
+  margin-bottom: 20px;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.noBackground {
+  background-color: transparent;
+}
+
+.priceFlex {
+  margin-bottom: 20px;
+  display: flex;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.robotRound {
+  flex: 0 0 50%;
+  padding: 30px 30px 20px;
+  border-right: grayBorder;
+}
+
+.globalSettingsData {
+  padding: 0 0 0 30px;;
+  margin-bottom: 20px;
+  display: flex;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.movement {
+  flex: 0 0 50%;
+  border-right: grayBorder;
+  padding: 22px 0 25px 30px;
+}
+
+.suitabilityMovement {
+  flex: 0 0 50%;
+  padding: 20px 0 0 30px;
+}
+
+.smartMovement {
+  padding: 20px 0 10px 30px;
+}
+
+.initial {
+  padding: 22px 0 10px 30px;
+}
+
+.threshold {
+  padding: 22px 20px 10px 30px;
+  flex: 0 0 50%;
+  border-right: grayBorder;
+}
+
+.thresholdTextField {
+  width: 130px;
+}
+
+.limitersWrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border: grayBorder;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px 30px 0 30px;
+  background-color: white;
+}
+
+.smartLimitersWrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border: grayBorder;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px 30px 10px 30px;
+  background-color: white;
+}
+
+.limitersFlex {
+  display: flex;
+}
+
+.limitersVariance {
+  flex: 0 0 47%;
+  margin-right: 6%;
+}
+
+.tradeEntrySettings {
+  padding: 20px 30px 0;
+  margin-bottom: 20px;
+  display: flex;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 46%;
+}
+
+.event {
+  display: flex;
+  width: 50%;
+}
+
+.timeAllowed {
+  flex: 0 0 46%;
+}
+
+.openTime {
+  flex: 0 0 46%;
+}
+
+.limiterPRR {
+  flex: 0 0 46%;
+}
+
+.currency {
+  flex: 0 0 70px;
+  height: 50px;
+  padding-top: 10px;
+  border-bottom: grayBorder;
+}
+
+.description {
+  line-height: 1.4;
+  padding: 40px 0 50px;
+}
+
+.exitFlex {
+  padding: 0 30px;
+  margin: 30px auto 20px;
+  display: flex;
+  border: grayBorder;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.neverSell {
+  margin-top: 40px;
+}
+
+.openPositions {
+  flex: 0 0 50%;
+  padding: 20px 0;
+  border-right: grayBorder;
+}
+
+.intervals {
+  padding: 30px 0 0 30px;
+}
+
+@media screen and (max-width: screen-lg) {
+
+  .limitersWrapper {
+    display: block;
+    padding: 30px 0px 20px 15px;
+  }
+}
+
+@media screen and (max-width: screen-md) {
+
+  .smartSettings {
+    padding: 15px;
+  }
+
+  .customSelectWrapper {
+    margin-top: -1px;
+  }
+
+  .cyclesPerRound {
+    padding: 30px 30px 20px 20px;
+  }
+
+  .priceFlex {
+    display: block;
+  }
+
+  .robotRound {
+    padding: 20px 30px 0;
+    border-right: none;
+  }
+
+  .cyclesPerRound {
+    padding: 0 30px 20px;
+  }
+
+  .smartMovement {
+    padding: 20px 30px;
+  }
+
+  .smartLimitersWrapper {
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+  }
+
+  .globalSettingsData {
+    flex-wrap: wrap;
+  }
+
+  .noSmartRobotRound {
+    flex: 0 0 90%;
+    border-right: none;
+    padding: 30px 0 0 0;
+  }
+
+  .noSmartCyclesRound {
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    flex: 0 0 48%;
+    margin-right: 4%;
+  }
+
+  .noSmartAge {
+    flex: 0 0 48%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .suitabilityMovement {
+    padding-left: 15px;
+  }
+
+  .movement {
+    padding: 22px 0 0 30px;
+    border-right: none;
+  }
+
+  .timeAllowed {
+    margin-top: 15px;
+  }
+
+  .threshold {
+    padding: 22px 20px 0 30px;
+    flex: 0 0 90%;
+    border-right: none;
+  }
+
+  .thresholdTextField {
+    width: 200px;
+  }
+
+  .initial {
+    padding: 10px 0 20px 30px;
+  }
+
+  .limitersFlex {
+    padding-bottom: 20px;
+  }
+
+  .event {
+    width: 100%;
+  }
+
+  .amount {
+    margin-right: 30px;
+  }
+
+  .openTime {
+    margin-right: 30px;
+  }
+
+  .neverSell {
+    margin-top: 30px;
+  }
+
+  .exitFlex {
+    padding: 0 20px;
+    margin: 20px auto 20px;
+    display: block;
+  }
+
+  .openPositions {
+    border-right: none;
+    padding: 20px 0 10px;
+  }
+
+  .intervals {
+    padding: 0 0 20px;
+  }
+
+}

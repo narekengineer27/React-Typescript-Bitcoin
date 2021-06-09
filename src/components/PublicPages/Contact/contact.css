@@ -1,0 +1,73 @@
+@value theme: "Styles/theme.css";
+
+@value grayBorder, screen-lg from theme;
+
+.addresses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto -50px auto;
+  width: 690px;
+}
+
+.addresses dl {
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+
+.addresses dl dd:first-child {
+  font-weight: bold;
+}
+
+.addresses dt {
+  float: left;
+  width: 30px;
+  font-weight: 500;
+}
+
+.addresses dd {
+  margin-left: 30px;
+  margin-bottom: 2px;
+  width: 250px;
+}
+
+.addresses dd b {
+  font-weight: 500;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: screen-lg) {
+  .addresses dl:nth-child(odd) {
+    padding-right: 60px;
+    margin-right: 60px;
+    border-right: grayBorder;
+  }
+}
+
+@media screen and (max-width: screen-lg) {
+  .addresses {
+    flex-direction: column;
+    width: auto;
+    margin-top: 40px;
+  }
+
+  .addresses dl {
+    border-bottom: grayBorder;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .addresses dl:last-child {
+    border: none;
+  }
+}
+
+@media screen and (max-width: screen-md) {
+  .field {
+    margin-bottom: 15px;
+  }
+}

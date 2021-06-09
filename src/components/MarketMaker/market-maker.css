@@ -1,0 +1,105 @@
+.contentWrapper{
+    border: 1px solid darkgray;
+    padding: 50px; 
+}
+
+.content {
+    max-width: 1160px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.header img {
+    width: 50px;
+    margin-top: -15px;
+}
+
+.header span {
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.content th{
+    width: 25%;
+}
+
+.leftDesc {
+    text-align: left;
+    width: 33%;
+}
+
+.rightDesc {
+    text-align: right;
+    width: 33%;
+}
+
+.tableTitle {
+    text-align: center;
+    width: 33%;
+}
+
+.tableDescWrapper {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.tableDescLeftItemWrapper {
+    width: 33%;
+    text-align: left;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.tableDescTitleItemWrapper {
+    width: 33%;
+    text-align: center;
+    font-size: 26px;
+}
+
+.tableDescRightItemWrapper {
+    width: 33%;
+    text-align: right;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.tableTitleItemWrapper {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+}
+
+.tdItem {
+    text-align: center;
+    padding: 20px;
+}
+
+.tdItem span {
+    display: block;
+}
+
+.tdNormalText {
+
+}
+
+.tdBlueText {
+    color: #4fa3ff;
+}
+
+.tdBtn {
+    width: 200px;
+    margin: 5px;
+}
+
+.tdBtn1 {
+    width: 200px;
+    /* margin: 5px; */
+}

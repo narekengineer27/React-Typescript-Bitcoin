@@ -1,0 +1,57 @@
+@value theme: "Styles/theme.css";
+@value profitColor, lossColor, zeroColor from theme;
+
+.wrapper {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  line-height: 1.5;
+}
+
+.wrapper.top {
+  line-height: 2;
+}
+
+.profit, .loss {
+  display: flex;
+}
+
+.profit {
+  white-space: nowrap;
+}
+
+.wrapper .icon {
+  position: relative;
+  font-size: 17px;
+}
+
+.right .icon {
+  margin-left: 5px;
+  bottom: 1px;
+}
+
+.left .icon {
+  margin-right: 5px;
+}
+
+.wrapper i.top {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 0;
+}
+
+.profit .icon {
+  color: profitColor;
+}
+
+.loss {
+  white-space: nowrap;
+}
+
+.loss .icon {
+  color: lossColor;
+}
+
+.zero {
+  /*color: zeroColor;*/
+}

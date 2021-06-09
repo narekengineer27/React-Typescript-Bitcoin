@@ -1,0 +1,118 @@
+@value theme: "Styles/theme.css";
+
+@value screen-xl, grayBorder, blueText, grayDark, blue from theme;
+
+.tbody {
+  height: 280px;
+}
+
+.tbody, .noDataBody {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.tbody.noScrollbar {
+  height: auto;
+}
+
+.tbody .actions {
+  flex: 0 0 220px;
+  padding: 0 30px 0 15px;
+}
+
+.tbody .coin {
+  flex: 0 0 90px;
+}
+
+.tbody .id {
+  flex: 0 0 50px;
+}
+
+.ratio {
+  margin: 15px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: blue;
+}
+
+.table {
+  border-top: grayBorder;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.pagination {
+  padding: 20px;
+  text-align: center;
+}
+
+.liquidityValues {
+  flex: 0 0 115px;
+}
+
+.tooltipLine {
+  line-height: 20px;
+}
+
+.signalWrapper {
+  position: relative;
+  width: 43px;
+  display: block;
+}
+
+.signal_bg {
+  width: 43px;
+}
+
+.signal {
+  width: 43px;
+}
+
+.signalBarWrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0px
+}
+
+.signalBar {
+  width: 43px;
+}
+
+@media screen and (max-width: screen-xl) {
+  .tbody {
+    height: auto;
+  }
+
+  .mobileFilters {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-top: grayBorder;
+  }
+
+  .mobileFilterHolder {
+    position: relative;
+    width: 56%;
+  }
+
+  .mobileFilterHolder:after {
+    content: '\f002';
+    font-family: FontAwesome;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 18px;
+    color: blueText;
+  }
+
+  .mobileSort {
+    padding: 0 15px 15px;
+  }
+
+  .pagination {
+    padding: 15px;
+  }
+}

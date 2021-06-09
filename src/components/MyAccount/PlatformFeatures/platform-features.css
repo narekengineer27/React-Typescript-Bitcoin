@@ -1,0 +1,284 @@
+@value theme: "Styles/theme.css";
+
+@value screen-md, blue, gray, grayDark, bgLight, grayBorder, orangeAlt, orange, blueText from theme;
+
+.topWrapper {
+  min-height: 900px;
+}
+
+.topContent {
+  position: relative;
+}
+
+.tabs {
+  max-width: 454px;
+  margin: 0 auto 50px;
+}
+
+.packageCards {
+  margin: 0 -40px;
+  text-align: center;
+}
+
+.packageCard {
+  width: 450px;
+  min-height: 365px;
+  margin: 0 20px 40px;
+  padding: 30px 40px 40px;
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  vertical-align: top;
+}
+
+.packageCard.green {
+  border-color: #00d966;
+}
+
+.packageCard.orange {
+  border-color: orangeAlt;
+}
+
+.packageCardHeader {
+  display: flex;
+  margin: -10px -20px 0;
+  align-items: center;
+}
+
+.packageCardHeader .duration {
+  flex: 0 0 116px;
+  height: 128px;
+  background: url(/public/assets/images/hexa-blue.svg) no-repeat;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.packageCardHeader .days {
+  font-size: 30px;
+  margin-top: 28px;
+  line-height: 30px;
+}
+
+.green .packageCardHeader .duration {
+  background-image: url(/public/assets/images/hexa-green.svg);
+}
+
+.orange .packageCardHeader .duration {
+  background-image: url(/public/assets/images/hexa-orange.svg);
+}
+
+.packageCardHeader .duration img {
+  margin-top: 35px;
+}
+
+.packageCardHeader .title {
+  font-size: 23px;
+  max-height: 70px;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+.packageCardHeader .price {
+  font-size: 23px;
+  font-weight: bold;
+  color: blue;
+}
+
+.packageCardList {
+  font-size: 17px;
+  list-style: none;
+}
+
+.packageCardList li:before {
+  content: '\f00c';
+  font-family: FontAwesome;
+  font-size: 17px;
+  color: blue;
+  margin-right: 13px;
+}
+
+.packageCardList li {
+  margin-bottom: 10px;
+}
+
+.packageCard .buttonArea {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.packageCard .button {
+  flex: 0 0 180px;
+  margin-right: 30px;
+}
+
+.packageCard .statusDisabled {
+  color: #ff5151;
+}
+
+.packageCard .statusProcessing {
+  color: orange;
+}
+
+.packageCard .statusCode {
+  font-weight: 500;
+  color: blue;
+  cursor: pointer;
+}
+
+.featuresWrapper {
+  max-width: 690px;
+  margin: 0 auto 40px;
+}
+
+.featureCard {
+  height: 80px;
+  display: flex;
+  border-radius: 4px;
+  background-color: white;
+  border: solid 1px #d2d9e4;
+  text-align: left;
+  margin: 0 auto 15px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.featureCard .right {
+  text-align: right;
+}
+
+.featureCard .title {
+  font-size: 23px;
+  color: blueText;
+}
+
+.featureCard .amount {
+  color: orange;
+}
+
+.featureCard .warn {
+  color: #ff5151;
+}
+
+.featureCard .inactive {
+  color: grayDark;
+}
+
+.viewAllButton {
+  width: 250px;
+  margin-top: 15px;
+}
+
+.activateButton {
+  width: 130px;
+}
+
+.purchaseFeatureModalContent {
+  padding-top: 20px;
+}
+
+.purchaseFeatureModalContent .inputs {
+  display: flex;
+}
+
+.purchaseCard {
+  width: 100%;
+  min-height: 150px;
+  padding: 30px 40px 0;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.purchaseCard.green {
+  border-color: #00d966;
+}
+
+.purchaseCard.orange {
+  border-color: orangeAlt;
+}
+
+.buyButton {
+  width: 140px;
+}
+
+.purchaseFeatureModalContent .footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.purchaseFeatureModalContent .footer .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 500;
+  color: grayDark;
+}
+
+.purchaseFeatureModalContent .footer .price .label {
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+
+.purchaseFeatureModalContent .inputs {
+  display: flex;
+  margin: 20px 0 10px 0;
+  width: 220px;
+}
+
+.plainInput {
+  position: relative;
+  margin-bottom: 20px;
+  flex: 0 0 80px;
+  padding-top: 21px;
+  margin-right: 10px;
+}
+
+.plainInput .label {
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: -2px;
+}
+
+.plainInput input {
+  height: 39px;
+  width: 100%;
+}
+
+.scratchCardModalContent {
+  padding-top: 30px;
+}
+
+.scratchCardModalContent .formContent {
+  padding: 20px 0 10px;
+}
+
+.scratchCardModalContent .formContent > div {
+  width: 50%;
+}
+
+.activateLiveModalContent {
+  padding-top: 30px;
+}
+
+.activateLiveModalContent .selectExchange {
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: screen-md) {
+  .packageCardHeader {
+    margin: 0 0 0 -20px;
+  }
+}

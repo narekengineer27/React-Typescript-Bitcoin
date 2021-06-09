@@ -1,0 +1,30 @@
+@value theme: "Styles/theme.css";
+@value grayDark from theme;
+
+.subTitle {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.description {
+  line-height: 1.4;
+  padding: 30px 0;
+}
+
+.descriptionRobot {
+  padding: 8px 0 20px 3px;
+}
+
+.messageBox {
+  margin-bottom: 290px;
+}
+
+.message {
+  font-size: 11px;
+  font-weight: 500;
+  color: grayDark;
+}
+
+.inputRowStyle {
+  margin-bottom: 218px;
+}

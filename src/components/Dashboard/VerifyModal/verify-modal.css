@@ -1,0 +1,47 @@
+.logo {
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 180px;
+}
+
+.closeBtn {
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.verifyMark {
+
+}
+
+.bigText {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+
+.smallText {
+    padding-bottom: 15px;
+}
+
+.buttonWrapper {
+    padding-bottom: 10px;
+}
+
+.continueBtn {
+    width: 150px;
+    display: block;
+    margin: auto;
+}

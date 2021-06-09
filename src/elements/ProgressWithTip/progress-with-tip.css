@@ -1,0 +1,17 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.toolTip {
+    position: absolute;
+    top: -20px;
+    left: 60%;
+    transform: translateX(-25%);
+}
+
+.progressBar {
+    width: 100%;
+    height: 10px;
+}

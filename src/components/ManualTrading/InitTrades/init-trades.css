@@ -1,0 +1,63 @@
+@value theme: "Styles/theme.css";
+@value grayBorder, white, grayDark, whiteShadow, blueText from theme;
+
+.wrapper {
+  margin: 90px auto 0;
+}
+
+.title {
+  font-weight: 300;
+  text-align: center;
+}
+
+.content {
+  width: 550px;
+  margin: 0 auto;
+  padding: 40px 30px 40px;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: grayDark;
+}
+
+.btnWrapper {
+  margin: 70px 0 20px;
+  text-align: center;
+}
+
+.importWays {
+  position: relative;
+  height: 80px;
+  line-height: 80px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: left;
+  box-shadow: whiteShadow;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.importWays:last-child {
+  margin-bottom: 0;
+}
+
+.importDescription {
+  padding: 20px 0 10px;
+  font-size: 15px;
+}
+
+.poloniex {
+  font-weight: 500;
+  color: blueText;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}

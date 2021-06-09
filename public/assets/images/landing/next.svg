@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-690.000000, -3455.000000)" id="Group-3" fill-rule="nonzero" fill="#4FA3FF">
+            <g transform="translate(220.000000, 3285.000000)">
+                <g id="Group-2" transform="translate(0.000000, 120.000000)">
+                    <path d="M483.673133,69 L501,69 L501,71 L482.682442,71 L492,80.4051095 L490.490323,82 L479,70.5 L490.490323,59 L492,60.5948905 L483.673133,69 Z M490,90 C478.953975,90 470,81.0460251 470,70 C470,58.9539749 478.953975,50 490,50 C501.046025,50 510,58.9539749 510,70 C510,81.0460251 501.046025,90 490,90 Z M490,52 C480.112676,52 472,60.1126761 472,70 C472,79.8873239 480.112676,88 490,88 C499.887324,88 508,79.8873239 508,70 C508,60.1126761 499.887324,52 490,52 Z" id="icon_arrow" transform="translate(490.000000, 70.000000) scale(-1, 1) translate(-490.000000, -70.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

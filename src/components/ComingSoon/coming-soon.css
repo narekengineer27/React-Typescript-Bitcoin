@@ -1,0 +1,36 @@
+.titleWrapper {
+    width: fit-content;
+    margin: auto;
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.titleWrapper img{
+    margin-right: 30px;
+    width: 45px;
+}
+
+.chartContent {
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 633px) {
+    .titleWrapper {
+        width: fit-content;
+        margin: auto;
+        font-size: 18px;
+        padding: 30px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    
+    .titleWrapper img{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 34px;
+    }
+}

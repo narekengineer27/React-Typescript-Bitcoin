@@ -1,0 +1,136 @@
+@value theme: "Styles/theme.css";
+@value screen-xl, blueText, blue, green, grayBorder from theme;
+
+#tradesTable {
+  font-size: 11px;
+}
+
+#tradesTable .created_at {
+  flex: 0 0 90px;
+}
+
+#tradesTable .pair {
+  flex: 0 0 75px;
+}
+
+#tradesTable .profit {
+  flex: 1 0 13%;
+}
+
+#tradesTable .suggestion {
+  flex: 0 0 95px;
+}
+
+#tradesTable .status {
+  flex: 0 0 80px;
+}
+
+#tradesTable .flag {
+  cursor: pointer;
+}
+
+.pagination {
+  padding: 20px;
+  text-align: center;
+}
+
+.filtersHolder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fieldsSection {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  flex: 0 0 48%;
+}
+
+.accountName {
+  padding-top: 13px;
+  position: relative;
+}
+
+.accountName input {
+  background: transparent;
+}
+
+.accountName:after {
+  content: '\f002';
+  font-family: FontAwesome;
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 17px;
+  color: blueText;
+}
+
+#tradesTable .option_exit {
+  flex: 0 0 176px
+}
+
+.leftButton {
+  width: 73px;
+}
+
+.profitsLeft {
+  flex: 0 0 55%;
+  color: green;
+}
+
+.profitsRight {
+  flex: 0 0 43%;
+  color: green;
+}
+
+.topNumbers {
+  color: blueText;
+  font-size: 11px;
+}
+
+.records {
+  position: relative;
+}
+
+.headerTitle {
+  padding: 20px 0;
+}
+
+@media screen and (max-width: screen-xl) {
+  .filtersHolder {
+    display: block;
+    padding: 0 20px 10px;
+  }
+
+  .fieldsSection {
+    display: block;
+    width: auto;
+  }
+
+  .leftButton {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .mobileFilters {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .records {
+    border-top: grayBorder;
+  }
+
+  .mobileSort {
+    padding: 0 15px 5px;
+  }
+
+  .pagination {
+    padding: 15px;
+  }
+}

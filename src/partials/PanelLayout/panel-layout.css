@@ -1,0 +1,63 @@
+@value theme: "Styles/theme.css";
+
+@value blue, publicPanelShadow, screen-sm from theme;
+
+.wrapper {
+  margin-bottom: 120px;
+}
+
+.title {
+  margin: 10vh 0 50px 0 !important;
+  text-align: center;
+}
+
+.public .title {
+  margin-bottom: 70px;
+}
+
+.panel {
+  background-color: #ffffff;
+  padding: 30px 30px;
+}
+
+.noBackground {
+  background-color: none;
+}
+
+/* .public is used as a flag to enable some appearance changes,
+as the same panel has a shadow and different margins in some settings */
+
+.public .panel {
+  border: none;
+  box-shadow: publicPanelShadow;
+  padding: 50px 40px;
+}
+
+@media screen and (max-height: 800px) {
+  .title {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: screen-sm) {
+  .wrapper {
+    margin-bottom: 60px;
+  }
+
+  .panel {
+    margin: 0 -30px;
+    padding: 20px 15px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .public .panel {
+    padding: 20px 25px 40px;
+  }
+
+  .title {
+    margin: 40px 0 40px 0 !important;
+  }
+
+}

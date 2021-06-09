@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-720.000000, -860.000000)">
+            <g id="Background" transform="translate(-828.000000, -614.000000)"></g>
+            <g id="Features" transform="translate(220.000000, 860.000000)">
+                <g id="Benefit-1-&amp;-2">
+                    <g id="Benefit-2" transform="translate(500.000000, 0.000000)">
+                        <g id="icon">
+                            <circle id="Oval" fill="#FFFFFF" cx="60" cy="60" r="60"></circle>
+                            <g transform="translate(37.000000, 29.000000)" fill="#4FA3FF">
+                                <path d="M18,53.4549907 C7.70162685,51.1720588 0,41.9854351 0,31 C0,20.0145649 7.70162685,10.8279412 18,8.54500932 L18,53.4549907 Z M44.0000032,21.6051968 C45.2852232,24.4736304 46,27.6533426 46,31 C46,34.3466574 45.2852232,37.5263696 44.0000032,40.3948032 L44,21.6051896 Z" id="Combined-Shape"></path>
+                                <rect id="Rectangle" x="18" y="0" width="5" height="62" rx="2.5"></rect>
+                                <path d="M26,8.19387944 C37.285065,9.66390085 46,19.3142094 46,31 C46,42.6857906 37.285065,52.3360991 26,53.8061206 L26,48.7511247 C34.51314,47.3228904 41,39.9189889 41,31 C41,22.0810111 34.51314,14.6771096 26,13.2488753 L26,8.19387944 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
